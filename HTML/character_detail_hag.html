@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>캐릭터 창 세부</title>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../CSS/share.css">
+	<link rel="stylesheet" href="../CSS/tap-menu-design.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://www.blueb.co.kr/SRC2/swipemenu/jquery.touchSwipe.min.js"></script>
+    <script src="../JS/tab-menu.js"></script>
+    <style>
+    	@font-face {
+		  font-family: a타이틀고딕2;
+		  src: url('../others/a타이틀고딕2.ttf') format('truetype');
+		}
+
+		p { font-family: a타이틀고딕2; }
+    	body {
+    		background-image: url('../others/detail_bg/bg-hag.png');
+			background-size: 100%;
+    		background-position: center top;
+    		background-repeat: no-repeat;
+    	}
+    	article {
+			background-color: white;
+			margin: 3% 20%;
+			opacity: 0.7;
+			padding: 3%;
+			border-radius: 20px;
+		}
+
+		h1 {
+			margin-top: 10%;
+			font-size: 300%;
+			text-align: center;
+			color: white;
+			text-shadow: black 2px 2px 5px;
+		}#perk {
+      width: 100%;
+      height: 100%;
+    }
+.small-img {
+      width: 30%;
+      height: 30%;
+    }
+.img {
+      width: 100%;
+      display: block;
+      margin: 0px auto;
+    }
+    </style>
+</head>
+
+<body>
+	<header class="top_banner">
+		<a id="go_main" href="main.html"></a>
+	</header>
+
+	<div class="containerbar">
+		<div id="sidebar">
+			<ul>
+				<li><a href="notice.html">공지</a></li>
+				<li><a href="update.html">업데이트</a></li>
+				<li><a href="info.html">게임정보</a></li>
+				<li><a href="character.html">공략글</a></li>
+				<li><a href="word.html">용어정리</a></li>
+				<li><a href="service.html">서비스</a></li>
+			</ul>
+		</div>
+
+		<div class="main-content">
+			<div class="swipe-area"></div>
+			<a href="#" data-toggle=".containerbar" id="sidebar-toggle"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+			<div class="content">
+				<section>
+					<h1>The Hag</h1>
+					<article class="box">
+						<div id="character-info">
+
+					    <div id="character-perk">
+					      <hr>
+					      <h1 class="text">살인마 고유 퍽</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/해그.png" alt="해그 이미지" id="perk">
+					    </div>
+
+					    <div id="character-skill">
+					      <hr>
+					      <h1 class="text">살인마 고유 능력</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/해그능력.png" alt="해그 능력" class="small-img" align="left">
+					      <ul>
+					        <br>
+					        <li class="text">맵에 최대 10개의 환영 덫을 설치할 수 있는 능력을 부여받는다.</li>
+					        <ul>
+					        <li class="text">환영 덫을 설치할 때는 해그가 허리를 숙여 바닥에 손가락으로 아이콘에 있는 삼각형 모양의 도형을 그린다.
+					           환영 덫을 설치하려고 숙이는 시간이 0.5초, 환영 덫을 설치하는 시간이 1초, 설치 후 일어나는 시간이 0.7초로 총 2.2초의 시간이 소요된다.</li>
+					      </ul>
+					        <li class="text">생존자가 환영 덫 근처에 접근하면 덫이 발동됨과 동시에 살인마에게 알림이 보내진다.
+					          <ul>
+					          <li class="text">근처에 있는 다른 생존자들은 청각적인 알림을 받는다.</li>
+					          <li class="text">발동된 환영 덫에 해그의 환영이 나타난다.</li>
+					          <li class="text">해그는 40m 내에 있는 발동된 환영 덫으로 순간이동이 가능하다.</li>
+					          <li class="text">다만, 생존자가 앉아있는 상태면 환영 덫이 발동되지 않는다.</li>
+					        </ul></li>
+					        <li class="text">환영 덫은 손전등의 빛을 비춤으로써 제거 가능하다.</li>
+					      </ul>
+					    </div>
+					    <div id="character-addon">
+					      <br>
+					      <hr>
+					      <h1 class="text">살인마 애드온 목록</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/해그 애드온.png" alt="해그 애드온" class="img">
+					    </div>
+					  </div>
+					  <div id="main-article">
+					    <hr>
+					    <h1>플레이시 팁</h1>
+					    <hr>
+					    <div id="pac">
+					      <h3 class="text"> 해그의 장단점</h3>
+					      <h4 class="text"> 해그의 장점</h4>
+					      <ul>
+					        <li class="text">
+					          <h4 class=text>덫을 이용한 발전기 및 갈고리 운영</h4>
+					          해그의 덫 설치한도는 10개다. 이를 이용해 발전기나 근처 판자존에 미리 덫을 깔아 운영을 시도할 수 있다. 순간 이동이 상당히 먼 거리까지 이어지기에 발전기들이
+					          다소 멀리 떨어져 있더라도 넓은 범위를 어느정도 커버할 수 있고 갈고리에 걸린 생존자 밑에 깔면 캠핑효과도 동시에 누릴 수 있다.
+					          발전기와 근처 판자존에 하나씩 깔아놓기만 해도 생존자 입장에선 부담이다.
+					  또한 터널링이나 구출 견제 용으로도 요긴하게 사용할 수 있다. 갈고리를 중심으로 구출이나 도주를 시도할 수 있는 모든 경로에 덫을 깔아놓으면 손절하지
+					  않는 이상 도중에 걸릴 확률이 매우 높기 때문. 손절하기도 애매한게, 해그는 텃세 준구와 달리 마음 놓고 멀리까지 발전기를 견제할 수 있어 손해가 더 크기 때문이다.
+					        </li>
+					        <br>
+					        <li class="text">
+					          <h4 class=text>좁은 공포범위</h4>
+					          해그가 구릴 때는 상향같지도 않은 상향 요소였지만, 해그 성능 자체가 오른 지금에 와서는 소소한 장점이 되었다. 감시와 학대 기술을 끼면 평소 공포범위가 16m까지 줄어 생존자의 대처를 크게 늦출 수 있다.
+					        </li>
+					        <br>
+					        <li class="text">
+					          <h4 class=text>판자존과 인성존 봉쇄 능력</h4>
+					          해그의 덫은 설치시간이 2.2초로 판자존에 들어간 생존자를 쫓으며 설치하기에 별 무리가 없는 수준이다. 상대가 인성존에 들어갔다 싶을 때 중간에 덫을 깔고 쫓으면 상대는 새로운 판자존을 찾거나 자신에게 지극히 불리한 심리전을 수행해야 한다.
+					           혹 상대가 심리전을 승리했다 하더라도 판자 하나 정도는 빠르게 뽑아낼 수 있다.
+					        </li>
+					      </ul>
+					      <h4 class="text"> 해그의 단점</h4>
+					      <ul>
+					        <li class="text">
+					          <h4 class=text>느린 이동 속도와 낮은 시야</h4>
+					          해그는 데바데의 살인마중 두 번째로 느린 기본 이동 속도를 자랑한다. 이러한 점 때문에 생존자의 이동 경로에 미리 설치한 덫이 없다면
+					          생존자를 추격하는 데에 시간을 꽤 많이 쓰기 때문에 초반에 생존자를 발견하면 추격에 어려움을 겪는다. 또한 키가 작은 만큼 시야도 낮아지기에 눈을 크게
+					          뜨지 않으면 추격중인 생존자를 놓칠 확률이 타 살인마에 비해 큰 편이다.
+					아무리 발동 시 순간이동이 가능한 덫 능력이 있더라도 덫이라는 한계 때문에 추격중엔 능력을 제대로 발휘하기 힘들다.
+					발동 시 갑툭튀 하는 환영 때문에 초보자들이 가장 놀라는 살인마이지만 정작 직접 추격 당하면 별로 무섭지 않다.
+					        </li>
+					        <br>
+					        <li class="text">
+					          <h4 class=text>생존자들의 덫 대처 능력에 따른 난이도 급변</h4>
+					          해그는 자기가 원하는 판자와 인성존에 덫을 그려 놓았을 땐 매우 강력한 살인마지만 반대로 덫이 제대로 없는 상태에서 생존자를 쫓을 땐 가장 약한 살인마 중 하나다.
+					           이는 생존자 중 해그에 대한 이해가 높은 사람이 있을 때 더욱 크게 느껴진다. 가령 한 생존자를 추격 중일 때 다른 한 생존자가 쫓아오며 해그가
+					            그리는 덫을 족족 파괴해주는 식으로 플레이하면 해그는 쫓던 생존자를 웬만하면 잡을 수 없게 되어 버린다. 그렇다고 덫을 부수는 새로운 생존자를
+					            쫓아가면 터널링도 못하고 새롭게 시간을 끌려 매우 곤란한 상황이 된다. 해그가 가장 강한 상황은 한 명을 최대한 빨리 갈고리에 건 후 그곳을 기점으로
+					            거미줄처럼 덫을 펼쳐나갈 때인데, 상술했듯 고인물 생존자 한 명이 덫을 제때에 터트려주고 어그로를 분산시키면 기본 이속이 느린 해그는
+					            생존자를 잡기가 매우 힘들어진다.
+					        </li>
+					        <br>
+					        <li class="text">
+					          <h4 class=text>버려지는 애드온이 많음</h4>
+					        애드온 대부분의 패널티가 삭제된 지금도 해그의 애드온은 썩 좋지 않은 애드온이 많은 편이다. 물 계열 애드온은 덫의 성능을 오히려 깎아내리는 함정 애드온이고,
+					        지속시간 증가도 썩 좋지 않은 애드온으로 꼽힌다. 또한 높은 등급의 애드온들도,
+					        패널티는 삭제되었지만 효과 자체가 별로인 것들이 너무 많다. 그래서 높은 등급 애드온은 기존에도 평이 좋았던 녹슨 족쇄와 민트색 누더기를 제외하면 다들
+					         평가가 좋지 않다.
+					        </li>
+					      </ul>
+					    </div>
+					    <div id="perk-setting">
+					      <hr>
+					      <h4 class="text">추천 퍽 세팅</h4>
+					      <img src="../others/공략관련 이미지/해그 퍽 추천.png" alt="해그 퍽" class="img">
+					      <p class="text">
+					        루인은 초반에 해그가 덫깔시간을 벌어주며 동시에 루인이 가까우면 루인앞에 덫을 하나 깔아놓으면 루인제거반인
+					생존자가 살인마가 해그인걸 모른다면 덫을 제거하려할때 빠르게 한대치고 시작할수있음.<br>
+
+					한방은 해그의 마지막 일발 역전퍽이며 자체적으로 변수를 주기힘든 해그에게 1킬을 안정적으로 챙겨주는 든든한퍽</p>
+					        <h4 class="text">나머지 두가지 퍽은 다음중에 채용하면 좋다.</h4>
+					      <img src="../others/공략관련 이미지/돼지퍽.png" alt="돼지퍽" class="img">
+					      <p class="text">살인마 공용 퍽인 돼지 퍽은 치료속도를 늦춤과 동시에 해그의 운영에도 도움을 주는퍽, 캠핑 터널링이 용이한 해그에게는 더욱 좋음</p>
+					      <img src="../others/공략관련 이미지/엔듀링.png" alt="엔듀링" class="img">
+					      <p class="text">힐빌리의 퍽으로 해그한테는 칼찌 짜증나서 드는퍽 굳이 판자맞으면서 돌 이유가 없는 해그에게는 칼찌때문에 드는퍽</p>
+					      <img src="../others/공략관련 이미지/모니터.png" alt="모니터" class="img">
+					      <p class="text">닥터의 퍽인 일명 모니터로 몸이 작고 심음이 24M인 해그를 16M까지 줄여줘서 발전기 돌리던 생존자에게 접근을 쉽게하게 해줌.</p>
+					      <img src="../others/공략관련 이미지/선택해라.png" alt="선택해라" class="img">
+					      <p class="text">피그의 퍽인 선택해라로 터널링하다 돌아가서 아무나 발견해도 편하게 해주는퍽 미리미리 주변에 덫도 깔아놨을거기 때문에
+					제한시간 내에 눕히기도 편함. 기용한다면 한방을빼고 기용하며 민트와도 매우 잘어울림</p>
+					    </div>
+					    <div id="addon-setting">
+					      <hr>
+					      <h4 class="text">추천 애드온 세팅</h4>
+					      <img src="../others/공략관련 이미지/해그 애드온 1.png" alt="해그 애드온" class="small-img" align="left">
+					      <p class="text">차례대로 민트, 족쇄, 벽그 애드온이며 <br>
+					민트는 해그에게 가장 좋은 애드온으로 평가받고있음 해그의 한계인 수동성을 극복함과 동시에 자기가 유연하게 운영을 굴릴수 있으며
+					족쇄, 전율같이 평소에 굴리기 힘들던 퍽, 애드온과도 매우 좋은 효율을 뽑아내기 때문이다.<br>
+					족쇄는 환영덫이 알람과 환영을 생성하지 않는다는 애드온인데 단순 성능은 괜찮지만 단순히 저 효과만보고 기용하기엔 애매한 애드온<br>
+					벽그는 해그의 순간이동 능력을 없애는 대신 환영을 충돌성을 가지게해서 생존자 양식놀이도 할수있게 해줌
+					굳이 사용하자면 창틀이 많고 맵이 좁은 전구의 치료관 맵퍼링과 같이 사용해서 쓸만하다<br><br>
+					      </p>
+					      <img src="../others/공략관련 이미지/해그 애드온 2.png" alt="해그 애드온" class="small-img" align="left">
+					      <p class="text">거북알, 매미, 목걸이 애드온이며<br>
+					거북알은 환영덫의 지속시간(발동된후 유지시간)을 증가시켜주는 계열이고 이 애드온의 장점은 뺑뻉이돌다가 덫터졌는데 환영 타기가 애매할때 그냥 한바퀴 더돌면 환영이 유지되어 있어서
+					생존자가 앞뒤로 갇히게 돼서 편하다<br>
+					매미는 해그의 환영덫 순간이동사거리를 늘려주는 계열이고 넓은맵일수록 더욱 좋은 애드온으로
+					그냥 단순 성능자체가 좋다 이거 들고있으면 하나 걸어놓고 좀더 멀리 순찰갈수도있음 그냥 단순하고 효과적인 좋은 애드온 <br>
+					목걸이는 덫그리는 속도를 빠르게 해주는 계열이고 이건 추격할때 덫을 빨리빨리 그려서 덫그리는거 보고 생존자가 빠질때
+					덫그리는속도가 매우빨라서 압박주기 쉬움 거리를 애매하게 빠지면 덫을 빨리그려서 쫓아가서 한대 치기도 쉽게해준다.
+					      </p>
+					    </div>
+					    <div id="game-operation">
+					      <hr>
+					      <h4 class="text">게임 운영 방법</h4>
+					      <p class="text">
+					        해그로 처음시작하면 왠만하면 루인쪽으로면서 가는 루트에 작집 혹은 인성존이 있으면 덫 끄적끄적 그려주고
+					루인근처에 덫을 깔고 생존자를 찾는 플레이가 요구된다. 만약에 루인가던도중에 생존자 발견하면 그냥 루인무시하고
+					바로 생존자를 추격하는게 무조건적인 이득이다. <br>생존자 첫번째를 얼마냐 빨리 눕히냐에 따라서 게임 자체가 달라지니까
+					최대한 빨리 눕히는걸 목표로 하면서 굴리고, 생존자는 해그상대로 당연히 무리안하고 판자를 바로빼는 판단할거기
+					때문에 판자라도 녹이면서 최대한 생존자 실수를 유도해야한다.<br>
+					해그 뉴비들이 자주 하는 실수로는 그냥 갈고리에 걸어놓고 갈고리 근처에만 봉인진 그리듯 그려대는 것이 있는데
+					그러지말고 앞에 말했듯이 갈고리앞에 한개깔고 거미줄을 치듯이 까는 것이 좋다. 생존자가 어디로 가든 유도해서 바로바로 잡을수 있겠다
+					싶게 깔아 생존자가 어디로 오든 다 대처할 수 있게하는 것이다.<br>
+					캠핑 중 한쪽에서 생존자가 덫을 밟았을 경우 그쪽으로 바로 텔타서 돼지묻히면서 떄려주고
+					그럼 나머지 구출하러온 생존자는 보통 어? 누가맞았네? 쫓기나보다 빨리가서 살려야지
+					하고 달려간다. 그 경우 반대쪽 덫 터지고 그쪽가서 또 돼지묻혀주고
+					이런식으로 운영해야한다.<br> 일반해그는 선택하라 안쓴다는 가정하에
+					터널링을 실패하면 게임이 굉장히 어려워지는 살인마니까 절대 터널링 실패하면 안된다.
+					이렇게 운영굴려주면서 중반 넘어가면 1명 터널링으로 두들겨맞고 발전기 2개~3개 남을텐데
+					이경우 이론상 해그가 무조건 하드 캠핑 할거 알아서 생존자가 발전기만 돌리면 발전기 1개밖에 안남을텐데
+					인겜들어가면 막상 그렇게 되기 힘들며 2~3개 남은시점에서 한명을 걸면 2명이 남을텐데
+					이때부터는 너무 빡캠핑한다는 마인드보다는 똑같이 갈고리 주변으로 어느정도 덫을 그려주고
+					40M라는 사정거리를 잰다는 느낌으로 주변 발전기를 최대한 순찰하면서 전보다는 공격적으로 나아가야한다.<br>
+					실제로 인겜들어가면 구출받은애가 걸려있던 갈고리 주변만 앉아다니고 벗어나면 걷거나 뛰어다니다 덫터져서
+					바로 또잡는 그림도 자주나옴 여기서 매미계열이 좋은점이 나옴 64M면 진짜 허경영마냥 축지법쓰면서 맵 왔다갔다 할수있으며
+					해그상대로는 한방작으로 토템미리 다까는 생존자들이 거의없기때문에 한방도 안정적으로 쓸수있음
+					      </p>
+					    </div>
+					  </div>
+					</article>
+				</section>
+
+				<footer>
+          <section class="community">
+            <div class="socialmedia">
+              <ul class="listes_socialmedia">
+                <li class="twitter_media"><a href="https://twitter.com/deadByBHVR" target="_blank" title="Twitter"></a></li>
+                <li class="facebook_media"><a href="https://www.facebook.com/DeadByDaylight/" target="_blank" title="Facebook"></a></li>
+                <li class="youtube_media"><a href="https://www.youtube.com/channel/UCaSgsFdGbwjfdawl3rOXiwQ" target="_blank" title="YouTube"></a></li>
+                <li class="instragram_media"><a href="https://www.instagram.com/deadbydaylight/" target="_blank" title="Instragram"></a></li>
+                <li class="twitch_media"><a href="https://www.twitch.tv/deadbydaylight" target="_blank" title="Twitch"></a></li>
+                <li class="steam_media"><a href="https://steamcommunity.com/app/381210" target="_blank" title="Steam"></a></li>
+                <li class="reddit_media"><a href="https://www.reddit.com/r/deadbydaylight/" target="_blank" title="Reddit"></a></li>
+                <li class="gamepedia_media"><a href="https://deadbydaylight.gamepedia.com/" target="_blank" title="Gamepedia"></a></li>
+                <li class='socialmedia-content'><a href="https://forum.deadbydaylight.com/en/" target="_blank"></a></li>
+              </ul>
+            </div>
+          </section>
+        </footer>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

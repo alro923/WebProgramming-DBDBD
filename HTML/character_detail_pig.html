@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>캐릭터 창 세부</title>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../CSS/share.css">
+	<link rel="stylesheet" href="../CSS/tap-menu-design.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://www.blueb.co.kr/SRC2/swipemenu/jquery.touchSwipe.min.js"></script>
+    <script src="../JS/tab-menu.js"></script>
+    <style>
+    	@font-face {
+		  font-family: a타이틀고딕2;
+		  src: url('../others/a타이틀고딕2.ttf') format('truetype');
+		}
+
+		p { font-family: a타이틀고딕2; }
+    	body {
+    		background-image: url('../others/detail_bg/bg-pig.png');
+			background-size: 50%;
+			background-position: center top;
+    		background-repeat: no-repeat;
+    	}
+    	article {
+			background-color: white;
+			margin: 3% 20%;
+			opacity: 0.7;
+			padding: 3%;
+			border-radius: 20px;
+		}
+
+		h1 {
+			margin-top: 10%;
+			font-size: 300%;
+			text-align: center;
+			color: white;
+			text-shadow: black 2px 2px 5px;
+		}#perk {
+      width: 100%;
+      height: 100%;
+    }
+.small-img {
+      width: 30%;
+      height: 30%;
+    }
+.img {
+      width: 100%;
+      display: block;
+      margin: 0px auto;
+    }
+    </style>
+</head>
+
+<body>
+	<header class="top_banner">
+		<a id="go_main" href="main.html"></a>
+	</header>
+
+	<div class="containerbar">
+		<div id="sidebar">
+			<ul>
+				<li><a href="notice.html">공지</a></li>
+				<li><a href="update.html">업데이트</a></li>
+				<li><a href="info.html">게임정보</a></li>
+				<li><a href="character.html">공략글</a></li>
+				<li><a href="word.html">용어정리</a></li>
+				<li><a href="service.html">서비스</a></li>
+			</ul>
+		</div>
+
+		<div class="main-content">
+			<div class="swipe-area"></div>
+			<a href="#" data-toggle=".containerbar" id="sidebar-toggle"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+			<div class="content">
+				<section>
+					<h1>The Pig</h1>
+					<article class="box">
+						<div id="character-info">
+
+					    <div id="character-perk">
+					      <hr>
+					      <h1 class="text">살인마 고유 퍽</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/직구.png" alt="피그 이미지" id="perk">
+					    </div>
+
+					    <div id="character-skill">
+					      <hr>
+					      <h1 class="text">살인마 고유 능력</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/직구 능력.png" alt="피그 능력" class="small-img" align="left">
+					      <ul>
+					        <br>
+					        <li class="text">능력 발동키로 앉아다니며 3.68m/s의 속도로 이동하고 공포범위가 서서히 감소한다. 다시 누를 시 일어나며 공포범위가 서서히 넓어진다. 이 상태에서 공격 버튼을 길게 누르면 달려가서 기습한다.
+					          기습 공격시 돌진 속도는 6.4m/s다. 매복하는 데는 약 1.3초가 걸리며, 기습시 최대 2.5초 동안 16m를 이동할 수 있다. <br></li>
+					        <li class="text">시작시 4개의 역방향 곰 덫이 주어지는데, 이 곰덫은
+					          <ul>
+					            <li class="text">빈사 상태의 생존자에게 씌울 수 있다.</li>
+					            <li class="text">발전기가 수리되면 타이머가 시작된다.</li>
+					            <li class="text">역방향 곰덫의 타이머가 시작된 경우, 생존자가 출구로 나가면 발동한다.</li>
+					            <li class="text">타이머가 다 지나면 자동으로 발동한다.</li>
+					            <li class="text">생존자들은 4개의 직쏘 박스 중 열쇠가 들어있는 하나의 직쏘 박스를 수색해서 역방향 곰덫을 해제할 수 있다. 애드온을 이용해 직쏘 박스의 수를 최대 6개까지 늘릴 수 있다.</li>
+					            <li class="text">타이머 설정 시간은 기본적으로 2분 30초다.</li>
+					            <li class="text">추격, 빈사, 갈고리, 공포 범위 내에 있을 때는 타이머가 일시정지된다.</li>
+					          </ul>
+					        </li>
+					      </ul>
+					    </div>
+					    <div id="character-addon">
+					      <br><br>
+					      <hr>
+					      <h1 class="text">살인마 애드온 목록</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/직구 애드온.png" alt="피그 애드온" class="img">
+					    </div>
+					  </div>
+					  <div id="main-article">
+					    <hr>
+					    <h1>플레이시 팁</h1>
+					    <hr>
+					    <div id="pac">
+					      <h3 class="text"> 직구의 장단점</h3>
+					      <h4 class="text"> 직구의 장점</h4>
+					      <ul>
+					        <li class="text">
+					          <h4 class=text>작은 몸집과 매복시 공포범위 0m</h4>
+					          피그는 살인마들 중 유독 몸집이 작은 데다 고유 능력인 앉기를 쓰면 모습이 더 작아져서 잘 보이지 않는다.
+					          거기에 앉을 경우 공포범위가 0이 되어 심장소리가 들리지 않기 때문에 생존자 입장에서는 살인마를 감지하기 힘들다. 이러한 특성들이 겹쳐서 피그 입장에서는 생존자들을 색적하는데 도움이 된다.
+					        </li>
+					        <br>
+					        <li class="text">
+					          <h4 class=text>뛰어난 기습능력</h4>
+					          피그는 앉아 다니면서 심음을 숨기고 구조물에 붙어다니면서 주변 소리를 파악한 후 기습 공격을 하는데 능하다.
+					          때문에 신경이 곤두서있지 않은 이상 생존자들은 발전기를 돌리다 피그의 기습에 한 대 맞고 시작하기 일쑤다.
+					        </li>
+					        <li class="text">
+					          <h4 class=text>역방향 곰 덫을 이용한 뛰어난 운영 능력</h4>
+					          역방향 곰 덫은 발전기가 켜지면 타이머가 시작되기 때문에 팀원들이 발전기를 켜는데 신중해야 하며, 역방향 곰 덫이 머리에 씌워진 생존자는 맵 곳곳에 놓여진 직소박스를 뒤져 곰 덫을 해체해야 한다.
+					          따라서 이 시간 동안 생존자 한명이 발전기 수리를 못하게 되고 살인마의 입장에서는 시간을 조금 번셈이 된다.
+					        </li>
+
+					      </ul>
+					      <h4 class="text"> 직구의 단점</h4>
+					      <ul>
+					        <li class="text">
+					          <h4 class=text>운영을 위한 발판 마련의 어려움</h4>
+					          사실 이건 모든 뚜벅이 살인마에게 해당되는 사항인데 피그 역시 역방향 곰 덫을 이용해 게임을 운영하기 위해선 먼저 생존자를 눕혀야 가능하다는 모순이 존재한다.
+					          즉, 첫 생존자를 눕히기 어려운데, 눕혀야만 운영이 가능해진다. 하필 첫번째 생존자가 능숙한 플레이어라서 시간이 끌려버린다면 이보다 더 무력 할 수는 없다는 얘기인데
+					          이는 '기습 공격' 능력이 먹통이여서 생기는 문제. 본래 피그가 기습용이나 추격용으로 사용할 수 있어야 할 이 능력에 문제점이 너무 많아 생존자 추격에 거의 무의미하다는 점 때문에 생존자 공격에
+					          대해서는 거의 무특성이나 다름없다.
+					        </li>
+					        <br>
+					        <li class="text">
+					          <h4 class=text>운 요소가 심한 역방향 곰 덫 해제</h4>
+					          역방향 곰 덫 해제는 맵 곳곳에 있는 4개의 직소박스 중 하나에 열쇠가 있다는 설정이라 해제 확률로 따지면 25%다.
+					          살인마의 입장에서는 곰 덫을 씌우고 이제 게임을 풀어나가볼까 하는데 운이 좋게도 생존자가 단번에 곰 덫을 풀어버리면 거의 원점으로 돌아가는 거나 마찬가지인 셈이다.
+					        </li>
+					        <li class="text">
+					          <h4 class=text>수동적인 덫 발동</h4>
+					          역방향 곰 덫이 발동하려면 발전기가 작동해야 되는데 발전기를 돌리는 대상은 생존자이므로 살인마가 직접 덫을 발동시키는 것이 아니라서 수동적일 수 밖에 없다.
+					          숙련된 생존자들은 다른 생존자에게 역방향 곰 덫이 씌워져있으면 발전기를 완전히 돌리는 것이 아니라 발전기를 99%까지만 돌려놓고 생존자가 곰 덫을 해제할 때까지 기다렸다가 발전기를 돌려서 덫이 발동할 기회조차
+					          주지않는 경우도 있으며, 심하면 두 개 이상의 발전기를 99%까지 만들어놓고 역방향 곰덫을 해제하자마자 연달아 돌리는 플레이도 있다.
+					        </li>
+					        <li class="text">
+					          <h4 class=text>능력으로 인한 판도 변화능력 부재</h4>
+					          역방향 곰 덫이 발동하려면 발전기가 작동해야 되는데 발전기를 돌리는 대상은 생존자이므로 살인마가 직접 덫을 발동시키는 것이 아니라서 수동적일 수 밖에 없다.
+					          숙련된 생존자들은 다른 생존자에게 역방향 곰 덫이 씌워져있으면 발전기를 완전히 돌리는 것이 아니라 발전기를 99%까지만 돌려놓고 생존자가 곰 덫을 해제할 때까지 기다렸다가 발전기를 돌려서 덫이 발동할 기회조차
+					          주지않는 경우도 있으며, 심하면 두 개 이상의 발전기를 99%까지 만들어놓고 역방향 곰덫을 해제하자마자 연달아 돌리는 플레이도 있다.
+					        </li>
+					        <li class="text">
+					          <h4 class=text>수동적인 덫 발동</h4>
+					          대부분의 살인마가 본인 고유의 능력을 잘 활용할 경우 게임의 판도를 뒤집거나 불리한 상황을 유리하게 타개할 수 있는데 피그의 역방향 곰 덫은 '역방향 곰 덫' 자체로 누릴 수 있는 영향력이 크지 않다.
+					          트래퍼의 '덫'은 생존자가 걸릴 경우 높은 확률로 생존자 하나를 잡을 수 있고 힐빌리나 카니발의 '톱'은 생존자를 한 번에 눕힐 수 있으며 닥터나 헌트리스,
+					          클라운같은 살인마도 직관적인 능력에 의해 능력을 맞추기만 하면 큰 효과를 볼 수 있다.
+					          하지만 피그의 '역방향 곰 덫'은 곰 덫 자체로 생존자를 죽이기도 힘들 뿐더러 생존자를 줄이는 데에 있어 큰 도움을 받기가 힘들다. 실제로 게임을 진행해보면 곰 덫을
+					          쓴 생존자들은 금세 덫을 풀어버리기 일쑤고 운이 좋아서 오래 곰 덫을 달고 다녀도 추격 능력에도 도움이 되지 않아 잡는데 시간이 끌리긴 매한가지이다.
+					          가장 와닿는 이득이라고는 발전기를 돌리는 사람이 하나 줄었다는 것인데, 그 마저도 곰 덫을 머리에 쓴 생존자를 추격할 때면 그냥 일반 생존자를 쫓는 것과 다를 것이 없다.
+					          그렇다고 곰 덫을 쓴 생존자를 버려두고 다른 생존자를 추격하면 생존자가 직쏘박스를 수색해 곰 덫은 금방 풀려버리는 딜레마에 빠지게 된다.
+					        </li>
+					        <li class="text">
+					          <h4 class=text>저열한 애드온 성능</h4>
+					        트래퍼, 레이스, 나이트메어같은 살인마들도, 애드온이 없으면 그다지 좋은 성능은 아니다.
+					        그러나 피그는 애드온도 좋지 않아서 나이트메어의 '학급 사진' 같은 애드온 약빨이조차 불가능하다는 것이 문제다. 개편 이전 레이스나 해그, 현재 카니발과 공유하는 문제점.
+					        특히 역방향 곰덫을 쓰지 않은 생존자 추격에 도움이 되는 애드온이 거의 없으며, 있더라도 성능이 너무 떨어진다. 그렇다고 건강한 생존자에게 임의로 곰 덫을 씌우는 애드온 같은 게 있는 것도 아니며,
+					        역방향 곰 덫 특유의 수동성을 해결할 수 있는 애드온도 없다. 역방향 곰 덫 개수를 2개 이상 늘려주는 애드온도 없다.
+					        그래서 운 좋게 역방향 곰 덫을 해체한 생존자들에게 다시금 운을 시험하게끔 하는 플레이도 너무 제한적이다.
+					        따라서, 현재 피그의 '쓸만한' 애드온으로 꼽히는 것들도 타 살인마들의 애드온에 비하면 변수 창출 능력이 턱없이 부족한 편이다.
+					        </li>
+					      </ul>
+					    </div>
+					    <div id="perk-setting">
+					      <hr>
+					      <h4 class="text">추천 퍽 세팅</h4>
+					      <img src="../others/공략관련 이미지/전구 퍽 추천.png" alt="피그 퍽" class="img">
+					      <p class="text">
+					        피그의 기본 세팅이다.<br>
+					        왼쪽부터 루인은 대부분의 모든 살인마에게 추천되며 발전기 스킬체크 대성공당 1.6초 스킬체크 그냥 성공당 7초 이상의 시간을 늦출 수 있다.<br>
+					        한방퍽은 게임이 끝나갈 때 1~2킬 많을때는 3킬까지도 더 할 수 있게해주는 퍽이다.<br>
+					        브루탈은 판자를 부수는 시간을 빠르게 해줘 추격시 판자를 더 빠르게 뺼 수 있는 능력을 준다.<br>
+					        엔듀링은 칼찌를 맞을 경우 칼찌의 경직 시간을 75%나 줄여주고 판자를 맞을 경우에도 빠르게 회복이 가능하다.<br></p>
+					      <img src="../others/공략관련 이미지/피그 퍽 2.png" alt="피그 퍽" class="img">
+					      <p class="text">
+					        이 세팅은 지렁이 플레이라고 불리는 게임 방식인데 해그의 퍽인 루인과 너스의 퍽인 사망공포증을 이용하여 생존자들의 발전기 속도를 늦추고 생존자들을 빈사상태로 만들어 역방향 곰덫만
+					      씌우고서 갈고리에 걸지 않는 플레이 방식을 취한다. 이때 카니발의 퍽인 때려눕히기를 이용해 생존자들에게 다른 빈사 상태인 생존자가 보이지 않도록 하고 생존자를 모두 빈사상태로 만들었다면 살인마 고용퍽인 사슴 사냥꾼을 이용해
+					    빈사 상태인 생존자를 찾아서 모두 갈고리에 걸면 된다.</p>
+					    </div>
+					    <div id="addon-setting">
+					      <hr>
+					      <h4 class="text">추천 애드온 세팅</h4>
+					      <img src="../others/공략관련 이미지/직구 애드온 1.png" alt="피그 애드온" class="small-img" align="left">
+					      <p class="text">조작된 타이머 + 두번째 규칙<br>
+					        트랩이 작동하지 않도록 일부러 발전기를 99%를 만들어 놓고 안돌리는 걸 방지하기 위한 애드온세팅으로 발전기를 안돌리면 직쏘박스의 위치가 보이지않고 그렇기 때문에 해제하기가 어려워진다. 그리고 그만큼 발전기가 돌아가는 속도가 느려지기 때문에 능숙한 생존자를 만날경우 써봄직한 세팅이다.<br><br><br><br>
+					      </p><br>
+					      <img src="../others/공략관련 이미지/직구 애드온 2.png" alt="피그 애드온" class="small-img" align="left">
+					      <p class="text">조작된 타이머 + 부품 상자<br>
+					      역방향 곰덫의 해제시간이 길어지고 곰덫을 씌우는 시간이 감소해 덫으로 운영할때 주로 드는 에드온 세팅이다.
+					      </p><br><br><br><br>
+					      <img src="../others/공략관련 이미지/직구 애드온 3.png" alt="피그 애드온" class="small-img" align="left">
+					      <p class="text">조작된 타이머 + 직쏘의 주석이 달린 도면<br>
+					        생존자의 운을 시험하는 덫운영 세팅으로 만약 생존자가 5개의 직쏘상자 중 4번을 실패하면 트랩이 발동해 죽을 확률이 굉장히 높다.
+					      </p><br>
+					    </div>
+					    <div id="game-operation">
+					      <br>
+					      <hr>
+					      <h4 class="text">게임 운영 방법</h4>
+					      <p class="text">
+					        <초반><br>
+					        시작하자마자 매복, 루인 위치를 살피고 너무 멀면 포기하고 가까운 생존자 스폰 발전기로 이동
+					데린마라 스폰위치를 모르겠다 싶으면 근처 발전기 순회한다.<br>
+					만약 루인위치가 가까우면 그쪽으로 이동 발전기 수리하는 소리/불토를 까는 소리가 들릴경우 절대 바로 기습 쓰지말고 생존자의 시야권 밖에서(벽을 사이에 둔다거나) 접근해서 벽을 돌때 일어나면 한대는 확정타로 때릴 수 있어
+					일어나도 서서히 심음이 들리는거라 피그를 발견하지 못하면 간간히 뒷목잡을 때도 있다.<br>
+					처음에 눕힌 생존자는 '터널링 대상'으로 트랩이 아깝다면 안씌워도 좋고 1인당 1트랩이면 된다싶으면 씌워도 좋다.<br>
+					눕힌 애를 걸고 나선 다른 뚜벅이들과 마찬가지로 패트롤 캠핑을 하다가 1명 발견하면 그 친구를 눕힌다.
+					만약 노리던 친구가 인성존에 들어가거나 너무 멀어지면 포기하고 다시 캠핑하러 돌아가는게 좋다.
+					직구는 식구만큼이나 인성존에서 약한 편으로 피하는게 정신건강에 이롭고, '터널링 대상'과 '덫킬 대상'은 최대한 가까운 위치에 있어야 운영하기 좋아서
+					두번째로 눕히는 애가 너무 멀리서 누우면 곤란하다.<br>
+					암튼 이 과정에서 한명을 눕히고 '터널링 대상'은 구출될거야 이때 눕힌 친구가 '덫킬 대상'
+					덫을 씌우고 '갈고리에 걸지 않고' 구출된 친구를 다시 잡으러 이동
+					'터널링 대상'을 걸었으면 99퍼가 되어있을 발전기들을 발로 차고다니면서 패트롤 캠핑<br>
+					제 2의 룰 덕분에 덫이 발동 안되는 동안 덫을 벗을 확률은 매우 적어
+					만약 벗는다면... 새로운 '덫 킬 대상'을 찾는 수 밖에 없다.<br>
+					이 터널링 작업이 초반부 운영이다.
+					만약 터널링 대상이 걸린 상태에서, 덫이 3개남았을 때(터널링 대상에 안 씌우고) 또다른 친구를 만나고 눕힐 수 있었다면 그 친구도 덫을 씌워주되 덫이 2개 남아있는 상황이라면 아끼는 것이 좋다.<br>
+					<중반>(터널링 대상이 3훅까지 도달 or 덫 발동)<br>
+					터널링 대상이 먼저 죽었을 경우 덫이 걸린 친구는 최대한 무시하고 또 다른 한명을 터널링, 즉 초반이랑 똑같이 운영하면 된다.
+					이때 상황을 정리하면 보통 발전기 2 ~ 3개 남음 + 불토 out + 터널링 1~2 훅 + 덫 발동(즉, 직소 박스 아우라 보임)
+					이 정도가 된다.<br>
+					 여기서 부턴 '터널링 대상'과 '덫 킬 대상' 외의 생존자들은 신경쓰지 않고, 공짜로 맞아주는 한대씩만 때리고 빠지는 것이 좋다.
+					터널링 상대가 훅에 걸려있는 동안엔 '덫 킬 대상'을 찾아
+					'덫킬 대상'은 눕히거나 때릴 필요 없고, 그냥 직쏘 박스를 열지 못하도록 견제만 해줘
+					그러다가 터널링 대상이 구출 되면 바로 그쪽으로 가서 터널링 대상을 3훅까지 걸어주는 것이다.<br>
+					3훅을 걸 동안 '덫 킬 대상'이 덫을 벗지 못했다. 그럼 '덫 킬 대상'을 빨리 찾아서 덫이 씌워진 상대 앞에서 매복 상태로 덫이 터질 때까지 기다려
+					피그를 신경쓰지 않고 직쏘박스를 열면 당연히 한대 쳐주고 다시 매복상태로 들어가서 타이머를 돌린다.<br>
+					<후반>(발전기 1개 or 0개 + 생존자 3명 이하 + 남은 덫 2개)<br>
+					이제 최후의 수단인 한방과 '덫'의 탈출불가 성능을 이용하는 수 밖에 없다.<br>
+					발전기가 1개 남은 시점이면 남은 발전기가 돌아가는건 신경쓰지말고 한명을 쫒아서 눕히고 덫을 씌워서 방치하고 다른 놈을 쫒고,
+					발전기가 다 돌아가 한방퍽이 켜질 경우 바로 마지막 발전기와 가까운 입구로 달려간다.<br>
+					만약 한방퍽이 안 켜지면 남은 사람들은 포기하고 눕힌 생존자를 죽이는 것이 좋다.<br>
+					      </p>
+					    </div>
+					  </div>
+					</article>
+				</section>
+
+				<footer>
+          <section class="community">
+            <div class="socialmedia">
+              <ul class="listes_socialmedia">
+                <li class="twitter_media"><a href="https://twitter.com/deadByBHVR" target="_blank" title="Twitter"></a></li>
+                <li class="facebook_media"><a href="https://www.facebook.com/DeadByDaylight/" target="_blank" title="Facebook"></a></li>
+                <li class="youtube_media"><a href="https://www.youtube.com/channel/UCaSgsFdGbwjfdawl3rOXiwQ" target="_blank" title="YouTube"></a></li>
+                <li class="instragram_media"><a href="https://www.instagram.com/deadbydaylight/" target="_blank" title="Instragram"></a></li>
+                <li class="twitch_media"><a href="https://www.twitch.tv/deadbydaylight" target="_blank" title="Twitch"></a></li>
+                <li class="steam_media"><a href="https://steamcommunity.com/app/381210" target="_blank" title="Steam"></a></li>
+                <li class="reddit_media"><a href="https://www.reddit.com/r/deadbydaylight/" target="_blank" title="Reddit"></a></li>
+                <li class="gamepedia_media"><a href="https://deadbydaylight.gamepedia.com/" target="_blank" title="Gamepedia"></a></li>
+                <li class='socialmedia-content'><a href="https://forum.deadbydaylight.com/en/" target="_blank"></a></li>
+              </ul>
+            </div>
+          </section>
+        </footer>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>캐릭터 창 세부</title>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../CSS/share.css">
+	<link rel="stylesheet" href="../CSS/tap-menu-design.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://www.blueb.co.kr/SRC2/swipemenu/jquery.touchSwipe.min.js"></script>
+    <script src="../JS/tab-menu.js"></script>
+    <style>
+    	@font-face {
+		  font-family: a타이틀고딕2;
+		  src: url('../others/a타이틀고딕2.ttf') format('truetype');
+		}
+
+		p { font-family: a타이틀고딕2; }
+    	body {
+    		background-image: url('../others/detail_bg/bg-trapper.png');
+    		background-size: 20%;
+    		margin: 10px;
+    		background-repeat: no-repeat;
+    	}
+    	article {
+			background-color: white;
+			margin: 3% 20%;
+			opacity: 0.7;
+			padding: 3%;
+			border-radius: 20px;
+		}
+
+		h1 {
+			font-size: 300%;
+			text-align: center;
+			color: white;
+			text-shadow: black 2px 2px 5px;
+		}#perk {
+      width: 100%;
+      height: 100%;
+    }
+.small-img {
+      width: 30%;
+      height: 30%;
+    }
+.img {
+      width: 100%;
+      display: block;
+      margin: 0px auto;
+    }
+    </style>
+</head>
+
+<body>
+	<header class="top_banner">
+		<a id="go_main" href="main.html"></a>
+	</header>
+
+	<div class="null"></div>
+
+	<div class="containerbar">
+		<div id="sidebar">
+			<ul>
+				<li><a href="notice.html">공지</a></li>
+				<li><a href="update.html">업데이트</a></li>
+				<li><a href="info.html">게임정보</a></li>
+				<li><a href="character.html">공략글</a></li>
+				<li><a href="word.html">용어정리</a></li>
+				<li><a href="service.html">서비스</a></li>
+			</ul>
+		</div>
+
+		<div class="main-content">
+			<div class="swipe-area"></div>
+			<a href="#" data-toggle=".containerbar" id="sidebar-toggle"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+			<div class="content">
+				<section>
+					<h1>The Trapper</h1>
+					<article class="box">
+						<div id="character-info">
+
+					    <div id="character-perk">
+					      <hr>
+					      <h1 class="text">살인마 고유 퍽</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/덫구.png" alt="트래퍼 이미지" id="perk">
+					    </div>
+
+					    <div id="character-skill">
+					      <hr>
+					      <h1 class="text">살인마 고유 능력</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/덫구 능력.png" alt="트래퍼 능력" class="small-img" align="left">
+					      <ul>
+					        <br>
+					        <li class="text">1개의 곰덫을 가지고 시작한다. 애드온을 이용해 최대 3개까지 늘릴 수 있다</li>
+					        <li class="text">맵에 비활성화 상태인 5개의 곰덫들이 랜덤으로 배치된 채 게임이 시작된다.</li>
+					        <li class="text">맵에 배치되어있는 곰덫들을 주울 수 있으며, 어느 곳에나 설치 가능하다.</li>
+					        <li class="text">생존자가 설치된 곰덫을 밟으면 덫에 걸림과 동시에 트래퍼와 동료 생존자에게 시각적인 알람이 보내진다.</li>
+					        <li class="text">덫에 걸린 생존자는 부상 상태가 되며 움직임이 봉쇄된다.</li>
+					        <li class="text">자신도 덫에 걸릴 수 있으며, 생존자를 업고 있는 상태에서 덫에 걸리면 생존자를 떨어뜨려서 도망칠 수 있는 상태로 만든다.</li>
+					        <li class="text">설치된 곰덫은 생존자에 의해 해제가 가능하며 이 경우 덫이 비활성화된다. 해제에 소모되는 시간은 2.5초이며, 덫이 해제될 경우 살인마에게 시각적 알림이 간다.</li>
+					        <li class="text">비활성화 상태인 곰덫은 공구상자나 '공작원' 기술을 이용해 파괴공작이 가능하다.</li>
+					      </ul>
+					    </div>
+					    <div id="character-addon">
+					      <br><br>
+					      <hr>
+					      <h1 class="text">살인마 애드온 목록</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/덫구 애드온.png" alt="트래퍼 애드온" class="img">
+					    </div>
+					  </div>
+					  <div id="main-article">
+					    <hr>
+					    <h1>플레이시 팁</h1>
+					    <hr>
+					    <div id="pac">
+					      <h3 class="text"> 덫구의 장단점</h3>
+					      <h4 class="text"> 덫구의 장점</h4>
+					      <ul>
+					        <li class="text">변수 창출력이 강함 -> 덫으로 인한 변수성으로 인해 뚜벅이중에 애매하게 흘러간 게임을 뒤집어 볼수있으며
+					          처음으로 쫓는 생존자를 덫쪽으로 유도하여 잡으면 주변에서 덫을 빠르게 주워서 설계가 가능하다.</li>
+					        <br>
+					        <li class="text">생존자에게 심한 덫 압박-> 생존자들은 다음 판자가 있는 곳에 들어서기전에 생각을 해야한다. 판자에 덫을 깔았을 수도 있으므로 쫓기는 생존자에게 심리전을 강요할 수 있다.</li>
+					        <br>
+					        <li class="text">애드온 유지비가 좋다-> 가방류, 덫빠르게 까는류가 등급이 낮은 애드온에도 있어서 특정 애드온의 강제성이 심하지 않다.
+					          또한 보라색 이상의 비싼 애드온들도 매끄러운 코일을 제외하면 대부분 좋은 성능을 보여준다.</li>
+					      </ul>
+					      <h4 class="text"> 덫구의 단점</h4>
+					      <ul>
+					        <li class="text">대부분의 이동기가 없는 살인마에게 통용되는 단점인 루인의 강제성-> 덫구는 특정맵에는 좀더, 보통은 초반에 덫작업을 필수로 깔고감으로써
+					          초반에 견제자체가 힘든 단점이 있다. 이 시간동안 발전기가 엄청나게 빨리 돌아가는데 이걸 막기위해 반필수로 루인을 채용하게된다.</li>
+					        <br>
+					        <li class="text">바칠이 별로 어울리지 않는 살인마-> 너스,스피릿,힐빌리,군단처럼 기동성이 좋지 않아서 바로바로 이동하기도 힘들고, 레이스처럼 뚜벅이중에 바칠이 어울리는것도
+					          아니라서 블포 목적으로 바칠을 이용한다면 활용 능력이 떨어진다.</li>
+					        <br>
+					        <li class="text">생존자를 한 번에 죽일 수 없는 이동기 없는 살인마의 한계-> 덫구는 덫으로 변수를 창출하지만 기본적으로 2대를 무조건 때려야하고 이동속도가 4.6이지만
+					          기본적인 추노에 도움이 되지않는 능력으로 인해 뚜벅이에 속한다. 이로 인해 몰이사냥이나 운영이 실패하면 한방퍽에 기대는 수밖에 없다.</li>
+					        <br>
+					        <li class="text">수동적이며 생존자의 능력에 따라서 판이 달라진다-> 생존자들이 덫에 안걸리고 계속 푼다면 꼬이지만 덫에 잘걸려주고 덫도
+					          계속 살아남는다면 유리해지는, 어쩌면 어그로 1명과 나머지 3명중에 3명이 얼마나 센스있냐에 따라 덫구의 성능이 달라진다고 볼수있다.
+					          그리고 능력 자체가 수동적인면이 있어서 덫구가 하나 잡고 주변에 덫깔아놓고 주변 발전기를 돌아다니며 캠핑해도
+					          2-3명이 그냥 무시하고 발전기돌리면 결국 손해를 보는것은 덫구이다.</li>
+					      </ul>
+					    </div>
+					    <div id="perk-setting">
+					      <hr>
+					      <h4 class="text">추천 퍽 세팅</h4>
+					      <img src="../others/공략관련 이미지/덫구 퍽 추천.png" alt="트래퍼 퍽" class="img">
+					      <p class="text">
+					        왼쪽부터 루인은 초반에 덫작업을 위해 시간을 벌어주며 몇몇 지형은 루인앞에 덫을깔면 필수로 지우고 루인을 제거해야해서 좋다.<br>
+					        한방퍽은 덫구의 후반 역전퍽이며 뚜벅이들의 희망과도 같다. 0~2킬까지 밖에 못하는 판을 3~4까지도 노리게 해주는 필수 퍽이다.<br>
+					        엔듀링은 모든 뚜벅이들이 채용할 만한 퍽중 하나이다. 덫구가 빠르게 덫있는쪽으로 몰아가야한다는걸 생각해보면
+					        엔듀링으로 판자 맞을각오하고 그냥 밀어버리므로써 빠르게 밀수있으며, 보통 생존자 한명을 터널링해야하는 뚜벅이의 한계로 인해 칼찌를 맞더라도 빠르게 다시 추격할 수 있는 능력을 얻을 수 있다.</p>
+					      <p class="text">마지막으로 남은 한 자리는 다음 중에 하나를 채택하면 좋다.</p>
+					      <img src="../others/공략관련 이미지/브루탈.png" alt="브루탈" class="img">
+					      <p class="text">덫구의 퍽인 브루탈로 판자를 빠르게 부술 수 있어 추격에서 상당한 이득을 볼 수 있다.</p>
+					      <img src="../others/공략관련 이미지/밤부즐.png" alt="밤부즐" class="img">
+					      <p class="text">클라운의 퍽인 밤부즐은 덫이 깔려있지 않은 곳에서 살인마가 생존자를 잡기 어려운곳을 반복해서 도는 것을 막아 줌으로써 추격에서 상당한 이득을 볼 수 있다.</p>
+					      <img src="../others/공략관련 이미지/돼지퍽.png" alt="돼지퍽" class="img">
+					      <p class="text">살인마들의 공용퍽 중 하나인 일명 돼지퍽은 다친 생존자의 치료속도를 상당히 늦출 수 있으며 이는 발전기를 견제하는데 상당한 도움이 된다.</p>
+					      <img src="../others/공략관련 이미지/위스퍼.png" alt="위스퍼" class="img">
+					      <p class="text">살인마들의 공용퍽 중 하나인 위스퍼는 주변에 생존자의 유무를 알려주며 초반과 극후반의 생존자 탐색에 큰 힘이된다.</p>
+					    </div>
+					    <div id="addon-setting">
+					      <hr>
+					      <h4 class="text">추천 애드온 세팅</h4>
+					      <img src="../others/공략관련 이미지/덫구 애드온 1.png" alt="트래퍼 애드온" class="small-img" align="left">
+					      <p class="text">핏빛 연마석 + 피투성이 코일<br>
+					        생존자들이 덫을 해제해봤자 피투성이 코일의 능력으로 부상만 당하고 핏빛 연마석의 능력으로 다시 재설치되며 그렇다고 덫을 그대로 두면 갈 데가 없어서 금방 잡히게되고,
+					        덫을 해제하면 치료하느라 발전기 속도가 늦어져서 살인마가 굉장히 게임을 쉽게 가져갈 수 있다.
+					        덫구의 대부분 세팅은 초반에 덫을 몇 개 깔면 발전기가 돌아가 손해를 보기 때문에 덫 설치에 시간 투자를 많이 못하는데, 이 세팅만큼은 초반에 덫 설치하는데 시간을 투자해도 나쁘지 않다.
+					        이 세팅의 특징은 수제 덫 가방을 사용한 세팅과는 다르게 덫을 생존자들이 잘 보게 대놓고 창틀과 판자에 설치해 덫 해제를 유도해야 한다는 점이다.<br><br>
+					      </p>
+					      <img src="../others/공략관련 이미지/덫구 애드온 2.png" alt="트래퍼 애드온" class="small-img" align="left">
+					      <p class="text">핏빛 연마석 + 수제 덫 가방<br>
+					        피투성이 코일을 쓰는 세팅과 다른 점은 대놓고 판자 대기구간 같은 곳에 설치하지 말고 뺑뺑이 구간의 풀숲이나 생존자들이 많이 지나다니는 곳의 풀숲에 깔아 덫을 숨겨야 한다는 점이다.
+					        이 세팅또한 초반에 덫을 까는데 시간을 할애 하여도 좋다.
+					      </p>
+					      <br><br><br>
+					      <img src="../others/공략관련 이미지/덫구 애드온 3.png" alt="트래퍼 애드온" class="small-img" align="left">
+					      <p class="text">고정용 공구+수제 덫 가방<br>
+					        가장 무난한 세팅이며, 이 세팅부터는 초반 덫 설치에 많은 시간을 할애하는 것은 좋지 않다.
+					        처음 스타트 하고 첫 색적하러 가는 도중에 ㄷ자존이나 인성존에 한두개만 깔고 바로 발전기 견제하러 가야하며,
+					        처음 갈고리 걸고 나면 그때부터 주요 인성존, 판자존에 덫을 빨리 깔고 빠르게 갈고리로 돌아가 캠핑하는 방식으로 플레이를 해야한다.<br><br><br><br>
+					      </p>
+					      <img src="../others/공략관련 이미지/덫구 애드온 4.png" alt="트래퍼 애드온" class="small-img" align="left">
+					      <p class="text">타르 병+수제 덫 가방<br>
+					        이 세팅은 타르 병으로 덫의 색을 어둡게 해 바닥 색깔이 갈색이면 덫을 대놓고 깔아도 생존자들이 알아채기 힘들게 하는 세팅이다
+					        운영법은 3번 조합이랑 비슷하게 초반에 덫 한두개만 깔고 첫생존자 빨리 잡고 캠핑하면서 덫 하나씩 깔아주는 방식으로 하면 된다.
+					      </p><br><br>
+					      <img src="../others/공략관련 이미지/덫구 짜장덫.png" alt="트래퍼 애드온" class="small-img" align="left">
+					      <p class="text">타르병 사용시 인게임 덫 색깔</p><br><br><br><br><br><br>
+					    </div>
+					    <div id="game-operation">
+								<br><br>
+					      <hr>
+					      <h4 class="text">게임 운영 방법</h4>
+					      <p class="text">
+					        <초반><br>
+					          덫구는 고유 능력인 덫으로 인해 타 살인마와는 초반 운영방식이 조금 다르다.
+					          일단 초반에 덫구는 주변 지형지물 살피고 작집, 인성존을 최우선으로 덫을 깔아야 한다. 그리고 덫은 한쪽 구역에몰아서 까는거보다
+					          작집, 인성존에 깐다음 점점 이동하면서 분산해서 까는게 좋다.
+					          루인같은 경우에는 시작할 때 살인마의 근처에 있다면 루인 앞에 덫을 깔고 다른곳에 덫을 깔러 가면 되지만 너무 멀리 떨어져 있을 경우에는 포기하고 다른곳에 덫을 깔러 가는것이 좋다.
+					          루인은 초반에 덫을 까는 시간만 벌어줘도 이미 1인분은 한 것이기에 너무 집착하지 않는 것이 좋다.
+					          초반에 덫을 까는중 생존자와 마주쳤을 경우 무시하지 말고 쫓아야 한다. 만약 쫓지 않을 경우 뒤를 쫓아다니며 덫을 까는 족족 모두 지워버리는 모습을 볼 수 있다.<br>
+					          <중반><br>
+					            어느정도 덫작업을 끝내놓고 , 발전기 순찰하다가 생존자를 한놈 때려눕혀서 갈고리에 걸었다고 할 경우.
+					            여기서 바칠이 있느냐 없느냐에 따라서 운영법이 갈린다. 4인기준으로<br>
+					            바칠로 1명이 보인다? -> 무조건 거리 많이 안주는 패트롤캠핑하면서 주위 발전기 순찰해야한다. 2명정도가 내 주변에서 맴돌고 있다는 뜻이므로
+					            적당히 적당히 덫작업하고. 발전기 견제하면서 상태를 유지해야한다.
+					            2명이 보인다-> 이 경우는 조금 여유가 있는 상황으로 2명이 보이면 좀 가까운 생존자 쪽으로 가서 판자를뺴거나 한대 툭쳐주고 돌아오면 좋다.
+					            물론 판자나 한대 툭치려고 멀리 갈때 나머지가 구해서 돌아갔는데 흔적 못찾으면 게임이 망할 수도 있다.
+					            만약에 바칠을 사용하지 않는다면 정보가 없기 떄문에 갈고리 주변을 돌면서 발전기를 견제하고 덫줍고
+					            주변 판자촌쪽에 덫까는식으로만 해야한다.
+					            덫구는 아예 캠핑보다는 패트롤 캠핑을 하는걸 추천한다. 생존자들에게 구할 수 있을것 같다는 생각을 주어 생존자들이 발전기에 집중하지 못하게 해야한다.<br>
+					            <후반><br>
+					              발전기가 1-2개가 남고 생존자가 2-3명이 남은 기점으로 4명이 남았다면 패트롤 캠핑 실패 또는 추격 실패일텐데 이 경우에는 한방퍽에 기대는 수밖에없다.
+					              2개에 3명이 남는다면 한명을 걸고 계속 나머지 발전기를 돌아서 패트롤 보다는 다른 생존자를 찾아 계속 발전기 견제를 하는게 더 좋다.
+					              1개에 2명이 남는다면 한명 쫓고 눕힌다음에 위스퍼가 있다면 생존자를 갈고리에 걸지않고 지렁이 플레이를 추천하고
+					              바칠일 경우 생존자를 갈고리에 걸어 다른 생존자의 위치를 찾아보는 것도 하나의 방법이다. 하지만 색적 퍽이 하나도 없을 경우에는 올킬에 집착하기 보다는 3킬하고 한명은 보내주고
+					              다음 게임으로 넘어가는게 편하다.
+					              <br> 덫구는 시간이 지날수록 판자가 빠지고 덫작업이 어느정도 되있으므로 초중반 보다 후반에 생존자들을 더 쉽게 눕힐 수 있다. 그러므로 생각보다 발전기가 빠르다고 혹은 생존자가 많이 살아있다고 포기하지 말자.
+					      </p>
+					    </div>
+					  </div>
+					</article>
+				</section>
+
+				<footer>
+          <section class="community">
+            <div class="socialmedia">
+              <ul class="listes_socialmedia">
+                <li class="twitter_media"><a href="https://twitter.com/deadByBHVR" target="_blank" title="Twitter"></a></li>
+                <li class="facebook_media"><a href="https://www.facebook.com/DeadByDaylight/" target="_blank" title="Facebook"></a></li>
+                <li class="youtube_media"><a href="https://www.youtube.com/channel/UCaSgsFdGbwjfdawl3rOXiwQ" target="_blank" title="YouTube"></a></li>
+                <li class="instragram_media"><a href="https://www.instagram.com/deadbydaylight/" target="_blank" title="Instragram"></a></li>
+                <li class="twitch_media"><a href="https://www.twitch.tv/deadbydaylight" target="_blank" title="Twitch"></a></li>
+                <li class="steam_media"><a href="https://steamcommunity.com/app/381210" target="_blank" title="Steam"></a></li>
+                <li class="reddit_media"><a href="https://www.reddit.com/r/deadbydaylight/" target="_blank" title="Reddit"></a></li>
+                <li class="gamepedia_media"><a href="https://deadbydaylight.gamepedia.com/" target="_blank" title="Gamepedia"></a></li>
+                <li class='socialmedia-content'><a href="https://forum.deadbydaylight.com/en/" target="_blank"></a></li>
+              </ul>
+            </div>
+          </section>
+        </footer>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

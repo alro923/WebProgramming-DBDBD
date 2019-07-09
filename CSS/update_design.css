@@ -1,0 +1,61 @@
+h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 40;
+}
+
+* {
+  font-family: a타이틀고딕2;
+}
+
+#main-nav {
+  margin-top: 9%;
+  height: 80%;
+  text-align: center;
+}
+
+.update {
+  background-color: white;
+  display: inline-block;
+  width: 15%;
+}
+
+.update:nth-child(2, 3, 4)
+{
+  margin-left: 2%;
+}
+
+article {
+  padding: 3%;
+  color: black;
+  overflow: hidden;
+  height: 200px;
+}
+
+img {
+  width: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.main-content {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 19px;
+}
+
+footer {
+  position: relative;
+  padding-top: 10%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

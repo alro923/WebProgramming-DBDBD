@@ -1,0 +1,50 @@
+@font-face {
+  font-family: a타이틀고딕2;
+  src: url('../others/a타이틀고딕2.ttf') format('truetype');
+}
+
+* { font-family: a타이틀고딕2; }
+
+h1{
+  color:white;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 40;
+}
+#main-nav{
+  height: 80%;
+  text-align: center;
+}
+
+.info_U > h2{/*info_U클라스의 자손 h2태그 스타일*/
+  color:black; /*글자 검정색, 가운데 정렬*/
+  text-align: center;
+}
+
+.info_U{
+    background-color: red; /*배경 빨간색*/
+    height: 70px;
+}
+
+.info_U, .info_D{
+  overflow: hidden; /*넘치는 부분은 안보여줌*/
+  padding: 7px; /*내부간격*/
+}
+.info_D{
+  border: red solid 1px;
+}
+.info_UD{
+  margin: 20px 40px;
+}
+
+article{
+  color: white;
+  overflow: visible; /*넘치는 부분도 보임*/
+  width: 100%;
+
+}
+
+footer{
+  color:white;
+  bottom: 0;
+}

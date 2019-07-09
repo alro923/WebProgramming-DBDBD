@@ -1,0 +1,126 @@
+@font-face{
+  font-family: a번개;
+  src: url('../others/a번개.ttf') format('truetype');}
+
+/*이거 원래 없어*/
+h1 {
+  font-family: a번개;
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  height: 100%;
+  }
+body {
+  margin: 0;
+  background-color: black;
+  height: 100%;
+}
+.main_body{
+  bottom: 0;
+  display: block;
+}
+* {
+  text-decoration: none;
+}
+
+.top_banner {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+#go_main {
+  background-image: url('../others/top-logo-with-text.png');
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.community {
+  list-style: none;
+  left: 0;
+  right: 0;
+}
+
+.community li {
+  display: inline-block;
+  float: left;
+  margin-left: 2%;
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.listes_socialmedia a{
+  margin-right: 20px;
+  display: inline-block;
+}
+.twitter_media a{
+  background-image: url('../others/twitter.png');
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+}
+
+.facebook_media a{
+  background-image: url('../others/facebook.png');
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+}
+
+.youtube_media a{
+  background-image: url('../others/youtube.png');
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+}
+
+.instragram_media a{
+  background-image: url('../others/instagram.png');
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+}
+
+.twitch_media a{
+  background-image: url('../others/twitch.png');
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+}
+
+.steam_media a{
+  background-image: url('../others/steam.png');
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+}
+
+.reddit_media a{
+  background-image: url('../others/reddit.png');
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+}
+
+.gamepedia_media a{
+  background-image: url('../others/gamepedia.png');
+  height: 60px;
+  width: 50px;
+  background-size: cover;
+}
+
+.socialmedia-content a{
+  background-image: url('../others/forum.png');
+  height: 60px;
+  width: 50px;
+  background-size: cover;
+}

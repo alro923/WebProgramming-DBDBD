@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>캐릭터 창 세부</title>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../CSS/share.css">
+	<link rel="stylesheet" href="../CSS/tap-menu-design.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://www.blueb.co.kr/SRC2/swipemenu/jquery.touchSwipe.min.js"></script>
+    <script src="../JS/tab-menu.js"></script>
+    <style>
+    	@font-face {
+		  font-family: a타이틀고딕2;
+		  src: url('../others/a타이틀고딕2.ttf') format('truetype');
+		}
+
+		p { font-family: a타이틀고딕2; }
+    	body {
+    		background-image: url('../others/detail_bg/bg-shape.png');
+    		background-size: 20%;
+    		margin: 10px;
+    		background-repeat: no-repeat;
+    	}
+    	article {
+			background-color: white;
+			margin: 3% 20%;
+			opacity: 0.7;
+			padding: 3%;
+			border-radius: 20px;
+		}
+
+		h1 {
+			font-size: 300%;
+			text-align: center;
+			color: white;
+			text-shadow: black 2px 2px 5px;
+		}#perk {
+      width: 100%;
+      height: 100%;
+    }
+.small-img {
+      width: 30%;
+      height: 30%;
+    }
+.img {
+      width: 100%;
+      display: block;
+      margin: 0px auto;
+    }
+    </style>
+</head>
+
+<body>
+	<header class="top_banner">
+		<a id="go_main" href="main.html"></a>
+	</header>
+
+	<div class="null"></div>
+
+	<div class="containerbar">
+		<div id="sidebar">
+			<ul>
+				<li><a href="notice.html">공지</a></li>
+				<li><a href="update.html">업데이트</a></li>
+				<li><a href="info.html">게임정보</a></li>
+				<li><a href="character.html">공략글</a></li>
+				<li><a href="word.html">용어정리</a></li>
+				<li><a href="service.html">서비스</a></li>
+			</ul>
+		</div>
+
+		<div class="main-content">
+			<div class="swipe-area"></div>
+			<a href="#" data-toggle=".containerbar" id="sidebar-toggle"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+			<div class="content">
+				<section>
+					<h1>The Shape</h1>
+					<article class="box">
+						<div id="character-info">
+
+							<div id="character-perk">
+								<hr>
+								<h1 class="text">살인마 고유 퍽</h1>
+								<hr>
+								<img src="../others/공략관련 이미지/식구.png" alt="쉐이프 이미지" id="perk">
+							</div>
+
+							<div id="character-skill">
+								<hr>
+								<h1 class="text">살인마 고유 능력</h1>
+								<hr>
+								<img src="../others/공략관련 이미지/식구 능력.png" alt="쉐이프 능력" class="small-img" align="left">
+								<ul>
+									<br>
+									<li class="text">내면의 악 1단계:</li>
+									<ul>
+									<li class="text">공포범위가 엄청나게 감소하며, 붉은 빛이 제거된다.</li>
+									<li class="text">생존자의 살인마 감지 기술에 면역을 가진다.</li>
+									<li class="text">이동 속도와 공격 사거리가 약간 감소한다.</li>
+									<li class="text">분노가 쌓이지 않는다.</li>
+								</ul>
+									<li class="text">내면의 악 2단계:</li>
+									<ul>
+									<li class="text">공포범위가 적당히 감소한다.</li>
+									<li class="text">붉은 빛이 생기며, 생존자의 기술에 의해 위치가 감지된다.</li>
+									<li class="text">통상 이동 속도와 공격 사거리를 가진다.</li>
+								</ul>
+									<li class="text">내면의 악 3단계:</li>
+									<ul>
+									<li class="text">통상 공포범위를 가진다.</li>
+									<li class="text">모든 생존자들이 약점 노출 상태이상에 걸려, 한 방에 빈사상태가 된다.</li>
+									<li class="text">60초 동안 지속된다. 애드온을 이용해 지속 시간을 늘릴 수 있다.</li>
+									<li class="text">창틀 넘는 속도와 공격 사거리가 증가한다.</li>
+								</ul>
+								</ul>
+							</div>
+							<div id="character-addon">
+								<br>
+								<hr>
+								<h1 class="text">살인마 애드온 목록</h1>
+								<hr>
+								<img src="../others/공략관련 이미지/식구 애드온.png" alt="쉐이프 애드온" class="img">
+							</div>
+						</div>
+						<div id="main-article">
+							<hr>
+							<h1>플레이시 팁</h1>
+							<hr>
+							<div id="pac">
+								<h3 class="text"> 쉐이프의 장단점</h3>
+								<h4 class="text"> 쉐이프의 장점</h4>
+								<ul>
+									<li class="text">
+										<h4 class=text>애드온에 따라 달라지는 플레이 스타일</h4>
+										쉐이프는 애드온 조합에 따라 플레이 스타일이 확연히 달라진다.
+									</li>
+									<br>
+									<li class="text">
+										<h4 class=text>뛰어난 암살 능력</h4>
+										내면의 악 1단계의 쉐이프는 암살에 특화되어 있다. 기본 공포 범위가 6m에 기술까지 활용하면 0m까지 감소시킬 수 있는데, 이렇게 되면 생존자는 오로지 시각에만 의존해 살인마를 경계해야 한다. 게다가 레이스와는 달리 생존자의 모든 살인마 감지 기술에 면역을 가지기 때문에 암살이 더욱 쉬워지는건 덤. 이는 사방이 벽으로 막힌 치료관이나 게임 맵에서 빛을 발휘한다.
+					내면의 악 2단계의 쉐이프도 기본 공포 범위 16m에 기술과 애드온까지 활용하면 4m까지 감소시킬 수 있어 다른 살인마들에 비해 암살 능력이 출중한 편이다. 그러나 1단계와는 달리 감지 기술의 영향을 받는다.
+									</li>
+									<br>
+									<li class="text">
+										<h4 class=text>시간부 뛰어난 추격 능력</h4>
+										내면의 악 3단계의 쉐이프는 기본 공격이 한방기가 되어 뛰어난 추격 능력을 자랑한다. 창틀 넘기 속도도 빨라져 생존자와의 추격에서 이점을 가질 수 있기도 한다.
+									</li>
+								</ul>
+								<h4 class="text"> 쉐이프의 단점</h4>
+								<ul>
+									<li class="text">
+										<h4 class=text>매우 약한 초반 능력</h4>
+										암살 플레이가 효과적인 저랭크와는 달리 고랭크의 숙련된 생존자들은 암살에 매우 강하다. 게다가 내면의 악 1단계의 추격 능력은 애드온 없는 레이스와도 비교가 불가능할 정도로 초라하기 때문에 초반에 볼 수 있는 이득이 극히 적은 편.
+									</li>
+									<br>
+									<li class="text">
+										<h4 class=text>시간 제한이 있는 3단계</h4>
+									쉐이프의 추격 능력이 극한으로 올라갈 때는 내면의 악 3단계가 되었을 때인데, 이에는 시간 제한이 있기 때문에 항상 최고의 컨디션을 유지하기 힘들다. 게다가 내면의 악의 한계치 때문에 3단계로 승급될 수 있는 횟수도 정해져있다. 이는 플레이 스타일과 애드온을 이용해 극복이 가능한 편.
+									</li>
+									<br>
+									<li class="text">
+										<h4 class=text>내면의 악에 의존해야 하는 능력들</h4>
+									쉐이프는 내면의 악 단계를 올리는 것이 중요한데, 생존자를 미행하여 내면의 악 게이지를 쌓는 시간이 꽤 많이 허비된다. 게다가 상대가 숙련된 생존자일 경우엔 지형지물에 몸을 가리며 이동하기 때문에 미행하기가 더욱 까다롭다.
+									</li>
+									<br>
+									<li class="text">
+										<h4 class=text>높은 유지비</h4>
+									쉐이프는 애드온에 따라 플레이하는 방법이 다르지만 그만큼 애드온이 많이 필요한 살인마다. 제대로 게임을 하려면 애드온들이 꼭 필요한데 블러드웹에 안뜨거나하면 많은 블러드 포인트를 소비하게 된다.
+									</li>
+								</ul>
+							</div>
+							<div id="perk-setting">
+								<hr>
+								<h4 class="text">추천 퍽 세팅</h4>
+								<img src="../others/공략관련 이미지/식구 추천 퍽.png" alt="쉐이프 퍽" class="img">
+								<p class="text">
+									바칠은 블포 벌이에도 좋고 색적 능력도 뛰어나 채용할만 하다.<br>
+								위스퍼는 주변의 생존자 유무를 감지해 여러가지 상황에 응용이 가능하다.<br>
+									루인은 대부분의 모든 살인마에게 추천되며 발전기 스킬체크 대성공당 1.6초 스킬체크 그냥 성공당 7초 이상의 시간을 늦출 수 있다.<br>
+									식구는 3단계가 되면 한방에 생존자를 눕힐 수 있기는 하지만 한방퍽을 채용 함으로써 발전기가 모두 수리된 급박한 상황에서 내면의 악 게이지에 집착하지 않게 해준다.</p>
+							<h4 class="text">여기서 바꿔 넣을만한 퍽들로는 다음과 같은 것들이 있다.</h4>
+								<img src="../others/공략관련 이미지/엔듀링.png" alt="엔듀링" class="img">
+								<p class="text">힐빌리의 퍽인 엔듀링은 칼찌와 판자의 기절 시간을 줄여 줌으로써 추격에 힘을 줄 수 있다.</p>
+								<img src="../others/공략관련 이미지/브루탈.png" alt="브루탈" class="img">
+								<p class="text">트래퍼의 퍽인 브루탈은 판자를 부수는 속도를 증가 시켜 줌으로써 엔듀링과 마찬가지로 추격에 힘을 실어줄 수 있다.</p>
+								<img src="../others/공략관련 이미지/거미퍽.png" alt="돼지퍽" class="img">
+								<p class="text">쉐이프의 퍽인 거미퍽은 쉐이프의 이동속도를 15%까지 증가 시켜주므로 쉐이프의 운영과 추격 두가지 방면에서 모두 힘을 실어 줄 수 있다.</p>
+							</div>
+							<div id="addon-setting">
+								<hr>
+								<h4 class="text">추천 애드온 세팅</h4>
+								<img src="../others/공략관련 이미지/식구 애드온 1.png" alt="쉐이프 애드온" class="small-img" align="left">
+								<p class="text">J.마이어스의 추도사 + 추모화<br>
+									유지비가 저렴하고 가장 무난한 세팅으로 미행시 얻는 게이지 양을 늘려 줌으로써 빠르게 내면의 악 단계를 높이는 세팅이다.<br><br><br><br><br>
+								</p>
+								<img src="../others/공략관련 이미지/식구 애드온 2.png" alt="쉐이프 애드온" class="small-img" align="left">
+								<p class="text">향기나는 머리카락 다발 + J.마이어스의 추도사<br>
+									이 세팅은 무삼식구라고 불리며 내면의 악 3단계에 올라가면 3단계가 계속해서 지속되는 세팅이다. 3단계가 계속해서 지속되는 대신 3단계까지 필요한 미행 게이지가 2배 필요하다.
+								</p>
+								<br><br><br><br>
+								<img src="../others/공략관련 이미지/식구 애드온 3.png" alt="쉐이프 애드온" class="small-img" align="left">
+								<p class="text">묘비 조각 + J.마이어스의 추도사<br>
+									묘비식구라 불리는 세팅으로 내면의 악3 단계에서 건강하거나 부상당한 생존자를 바로 살해가 가능한 능력을 얻는다. 하지만 내면의 악 3단계까지 도달하는데 필요한 미행 게이지가 2배로 늘어난다.<br><br><br><br>
+								</p>
+							</div>
+							<div id="game-operation">
+								<hr>
+								<h4 class="text">게임 운영 방법</h4>
+								<p class="text">
+									식구는 3단계를 키기 위해선 심음거리가 짧고, 약간 이동속도가 느리며, 추격중 분노가 차지 않는 1단계를 거쳐야 하는데
+					이 1단계를 얼마나 빨리 채우느냐가 관건이 된다.<br>
+					사실 벽에 있는 약간의 틈이나, 구조물들 틈 사이로 생존자가 조금만 내비쳐도 내면의 악이 흡수가 가능하다.
+					그렇기 때문에 내면의 악을 빨리 채워주는 J. 마이어스의 추도사 애드온을 채용하는 것이 좋다.<br>
+					3단계가 켜진 순간부터는 생존자가 쫓기기 시작하면 무조건 눕히기가 가능하다.
+					창틀 넘는 속도가 빨라지고, 런지가 기본에서 더 길어지기 때문인데
+					런지가 다른 살인마들보다 더 길기 때문에 다른 살인마로는 때릴 수 없는 거리도 때려서 눕힐 수 있다.<br>
+					애드온과 퍽에 따라 식구의 운영 방식은 또 달라진다.
+					예를 들어 묘비 조각+거미퍽이 세팅에 포함된다면, 집착자를 먼저 찾고 거미 스택을 쌓아주는게 중요한 것이 중요하다.묘비 즉처시 공격 모션 판정이 아니므로, 거미 토큰이 깎이지 않는것도 장점이라면 장점.
+					늘 변수를 생각하듯이 본인의 퍽, 애드온을 생각하고 해야한다.
+								</p>
+							</div>
+						</div>
+					</article>
+				</section>
+
+				<footer>
+          <section class="community">
+            <div class="socialmedia">
+              <ul class="listes_socialmedia">
+                <li class="twitter_media"><a href="https://twitter.com/deadByBHVR" target="_blank" title="Twitter"></a></li>
+                <li class="facebook_media"><a href="https://www.facebook.com/DeadByDaylight/" target="_blank" title="Facebook"></a></li>
+                <li class="youtube_media"><a href="https://www.youtube.com/channel/UCaSgsFdGbwjfdawl3rOXiwQ" target="_blank" title="YouTube"></a></li>
+                <li class="instragram_media"><a href="https://www.instagram.com/deadbydaylight/" target="_blank" title="Instragram"></a></li>
+                <li class="twitch_media"><a href="https://www.twitch.tv/deadbydaylight" target="_blank" title="Twitch"></a></li>
+                <li class="steam_media"><a href="https://steamcommunity.com/app/381210" target="_blank" title="Steam"></a></li>
+                <li class="reddit_media"><a href="https://www.reddit.com/r/deadbydaylight/" target="_blank" title="Reddit"></a></li>
+                <li class="gamepedia_media"><a href="https://deadbydaylight.gamepedia.com/" target="_blank" title="Gamepedia"></a></li>
+                <li class='socialmedia-content'><a href="https://forum.deadbydaylight.com/en/" target="_blank"></a></li>
+              </ul>
+            </div>
+          </section>
+        </footer>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

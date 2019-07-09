@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>캐릭터 창 세부</title>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../CSS/share.css">
+	<link rel="stylesheet" href="../CSS/tap-menu-design.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://www.blueb.co.kr/SRC2/swipemenu/jquery.touchSwipe.min.js"></script>
+    <script src="../JS/tab-menu.js"></script>
+    <style>
+    	@font-face {
+		  font-family: a타이틀고딕2;
+		  src: url('../others/a타이틀고딕2.ttf') format('truetype');
+		}
+
+		p { font-family: a타이틀고딕2; }
+    	body {
+    		background-image: url('../others/detail_bg/bg-docter.png');
+    		background-size: 50%;
+    		background-repeat: no-repeat;
+    	}
+    	article {
+			background-color: white;
+			margin: 3% 20%;
+			opacity: 0.7;
+			padding: 3%;
+			border-radius: 20px;
+		}
+
+		h1 {
+			font-size: 300%;
+			text-align: center;
+			color: white;
+			text-shadow: black 2px 2px 5px;
+		}#perk {
+      width: 100%;
+      height: 100%;
+    }
+.small-img {
+      width: 30%;
+      height: 30%;
+    }.img {
+      width: 100%;
+      display: block;
+      margin: 0px auto;
+    }
+    </style>
+</head>
+
+<body>
+	<header class="top_banner">
+		<a id="go_main" href="main.html"></a>
+	</header>
+
+	<div class="containerbar">
+		<div id="sidebar">
+			<ul>
+				<li><a href="notice.html">공지</a></li>
+				<li><a href="update.html">업데이트</a></li>
+				<li><a href="info.html">게임정보</a></li>
+				<li><a href="character.html">공략글</a></li>
+				<li><a href="word.html">용어정리</a></li>
+				<li><a href="service.html">서비스</a></li>
+			</ul>
+		</div>
+
+		<div class="main-content">
+			<div class="swipe-area"></div>
+			<a href="#" data-toggle=".containerbar" id="sidebar-toggle"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+			<div class="content">
+				<section>
+					<h1>The Doctor</h1>
+					<article class="box">
+						<div id="character-info">
+
+					    <div id="character-perk">
+					      <hr>
+					      <h1 class="text">살인마 고유 퍽</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/전구.png" alt="닥터 이미지" id="perk">
+					    </div>
+
+					    <div id="character-skill">
+					      <hr>
+					      <h1 class="text">살인마 고유 능력</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/닥터 능력.png" alt="닥터 능력" class="small-img" align="left">
+					      <ul>
+					        <br>
+					        <li class="text">치료 요법 변환: 능력 사용 키를 통해 물리 치료, 전기 충격으로 전환할 수 있다.
+					           물리 치료 요법은 생존자를 때리기 위한 일반적인 상태이며, 전기 충격 요법으로 전환하면 자기장이 생성되고 공격 대신 자기장 방출을 사용할 수 있다.
+					        <ul>
+					          <li class="text">자기장: 전기 충격 요법으로 전환된 동안 공포 범위에 자기장을 형성한다. 자기장 내에 있는 생존자의 광기 수치가 상승하고 닥터와 가까울수록 그 상승치가 높아진다.</li>
+					          <li class="text">전기장 방출: 치료 요법 변환으로 전환한 상태에서 통상 공격 버튼으로 전기장을 충전해 정면 부채꼴 보양으로 방출한다.
+					             전기장에 피격된 생존자는 머리를 부여잡고 비명을 지르는 모션이 나오는데, 이 때 광기가 크게 상승하고 이후 2.5초 동안 모든 상호작용이 불가능해진다.</li>
+					        </ul>
+					      </li>
+					      <li class="text">광기: 수치가 쌓일 수록 따라 광기 단계가 상승하고 불이익이 추가된다. 광기 단계가 올라갈 때마다 생존자는 비명을 지르며 닥터에게 시각적 알림이 간다.
+					      <ul>
+					        <li class="text">광기 1단계<ul>
+					<li class="text">공포 범위 밖에 있을 시 광기가 서서히 떨어짐. 그러나 발전기 수리나 치료 등의 행동을 하고 있거나 달리는 중에는 감소하지 않음.</li>
+					<li class="text">33% 확률로 스킬체크 원이 가운데가 아닌 무작위 위치에서 나타남.</li>
+					<li class="text">광기 1단계에서 강등될 수 없음.</li>
+					</ul>
+					</li>
+					<li class="text">광기 2단계<ul>
+					<li class="text">공포 범위 밖에 있을 시 광기가 서서히 떨어짐. 그러나 발전기 수리나 치료 등의 행동을 하고 있거나 달리는 중에는 감소하지 않음.</li>
+					<li class="text">66% 확률로 스킬체크 원이 가운데가 아닌 무작위 위치에서 나타남.</li>
+					<li class="text">화면 가장자리에 가끔 스파크 효과가 생김.</li>
+					<li class="text">가끔 주변에 닥터의 환영이 생성됨. 이는 닥터도 볼 수 있으나 통제, 핏빛 체스킹 애드온이 없을 경우 먼 거리에서 오라로 보이지는 않음.</li>
+					<li class="text">광기 2단계에서 강등될 수 없음.</li>
+					</ul>
+					<li class="text">광기 3단계<ul>
+					<li class="text">100% 확률로 스킬체크 원이 가운데가 아닌 무작위 위치에서 나타남. 결정적인 일격과 정신 차리기에도 적용된다. 원래 스킬체크를 보여주던 행동들은 거의 실행할 수 없다.</li>
+					<li class="text">화면 가장자리의 스파크 효과가 강화됨.</li>
+					<li class="text">22초마다 비명을 지르며, 닥터에게 알림이 감.</li>
+					<li class="text">가끔 주변에 닥터의 환영이 생성됨. 이는 닥터도 볼 수 있으며, 먼 거리에서 오라로도 확인 가능.</li>
+					<li class="text">비명을 지를때 마다 닥터의 얼굴이 보였다 사라짐.</li>
+					<li class="text">발전기 수리, 치료, 파괴공작, 토템 정화, 상자 탐색이 불가능해짐.</li>
+					<li class="text">손전등과 지도, 열쇠 사용 불가. 나머지 아이템도 사실상 사용할 수 없다.</li>
+					<li class="text">정신 가다듬기를 통해 2단계로 강등 가능.</li>
+					</ul>
+					      </ul>
+					      </ul>
+					    </div>
+					    <div id="character-addon">
+					      <br>
+					      <hr>
+					      <h1 class="text">살인마 애드온 목록</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/전구 애드온.png" alt="닥터 애드온" class="img">
+					    </div>
+					  </div>
+					  <div id="main-article">
+					    <hr>
+					    <h1>플레이시 팁</h1>
+					    <hr>
+					    <div id="pac">
+					      <h3 class="text"> 전구의 장단점</h3>
+					      <h4 class="text"> 전구의 장점</h4>
+					      <ul>
+					        <li class="text">
+					          <h4 class=text>최고의 색적 능력</h4>
+					          광기가 쌓인 생존자는 일정 주기 혹은 특수한 조건을 충족할 때마다 비명을 지르며 살인마에게 위치를 노출하기 때문에 스텔스 플레이를 하기 매우 어렵다.
+					          게다가 광기 3단계일 때 생성되는 닥터의 환영은 닥터에게도 오라로 보이기 때문에 일명 GPS라고 불릴 정도로 뛰어난 색적 능력을 가져다준다.이는 애드온을 통해 더욱 업그레이드 가능하다.
+					        <br>
+					        <li class="text">
+					          <h4 class=text>각종 방해 능력을 통한 뛰어난 운영 및 추격 능력</h4>
+					          광기가 3단계까지 쌓이면 발전기 수리를 비롯한 대부분의 상호작용을 할 수 없기 때문에 발전기 수리 진행을 효과적으로 늦출 수 있다. 그리고 뛰어난 색적 능력 덕에 생존자들의 위치를 파악하기 쉽기 때문에 판단을 내리기도 쉽다.
+					생존자가 충격 요법을 맞으면 2.5초간 모든 상호작용이 불가능해지기 때문에 정확한 타이밍에 사용하여 창틀이나 판자를 이용하지 못하게 할 수 있다. 게다가 각종 애드온을 통해 여러가지 방해 능력을 부여할 수 있기 때문에 생존자를 교란하기도 좋다.
+					        </li>
+					        <br>
+					        <li class="text">
+					          <h4 class=text>모두 쓰일 구석이 있는 애드온들</h4>
+					          극소수의 애드온을 제외하면 모두 중간 이상 가는 성능을 가지고 있다. 특히 전극은 낮은 등급이 패널티가 적다는 이유로 오히려 더 좋은 평가를 받는 경우도 있다.
+					        </li>
+					      </ul>
+					      <h4 class="text"> 전구의 단점</h4>
+					      <ul>
+					        <li class="text">
+					          <h4 class=text>아쉬운 추격 능력</h4>
+					        닥터의 추격 능력은 충격 요법으로 생존자의 행동을 봉인할 때 진가를 발휘한다. 그러나 충격 요법을 맞춰야 할 정확한 타이밍을 가늠하기 힘든 편이며 전극이나 테이프 애드온이 없는 충격 요법의 기본 사거리는 그다지 길지 않은 편이라 어느 정도 거리가 있는 경우엔 맞추기 쉽지 않다. 게다가 전극 애드온은 충전 시간이 짧을 수록 짧은 사거리를, 사거리가 길 수록 긴 충전 시간을 가지기 때문에 타이밍이 꼬이기 쉽상이며, 테이프 애드온은 하나만 끼기엔 사거리가 애매하기 때문에 충격 요법의 효율도 좋지는 못한 편이다. 게다가 충격 요법 상태에서의 이동 속도는 막대기 상태보다 느리기 때문에 오히려 충격 요법을 이용해 추격전에서 이득을 보겠다는 생각과는 달리 실제론 추격 시간이 더 늘어나버리는 불상사가 생기는 경우도 많다.
+					        </li>
+					        <br>
+					        <li class="text">
+					          <h4 class=text>부족한 애드온 자리</h4>
+					        앞서 설명했듯이 전극 애드온의 충격 요법 효율은 기대에 못 미치는 편이다. 전기충격 요법의 효율을 극한까지 끌어올리려면 테이프 애드온 두 개를 동시에 착용해야 하는데, 그렇게 되면 고성능의 디버프 애드온을 낄 자리가 없어지게 된다.
+					         또한 디버프 애드온을 활용하려면 충격 요법을 맞춰야 하는데, 충격 요법을 맞추는 시간 동안에는 타 생존자를 견제하기 어렵다는 단점도 있다.
+					        </li>
+					        <li class="text">
+					          <h4 class=text>생존자 4명 모두에게 광기를 걸기 힘듦</h4>
+					      생존자 1~2명은 광기를 유지시킬수 있지만, 문제는 생존자가 고숙련자라면 광기에 걸린 생존자 2명을 버리고 멀리떨어진다. 광기에 걸린 2명은 위치가 자주 노출되기 때문에 시간을 끌어버리는 역할을 하고, 남은 2명이 시야조차 안 걸리는 스텔스 플레이를 하게 된다. 닥터의 색적능력은 눈에 띄어야하고, 닥터의 자기장 범위에 있거나 전기충격 요법에 맞아야한다.
+					       그렇다고 모든 생존자에게 광기를 걸기 위해서 이동 속도가 느린 충격 요법 모드를 계속 유지하고 다니면 생존자들에게 발전기를 수리할 시간을 주게 된다.
+					        </li>
+					      </ul>
+					    </div>
+					    <div id="perk-setting">
+					      <hr>
+					      <h4 class="text">추천 퍽 세팅</h4>
+					      <img src="../others/공략관련 이미지/전구 퍽 추천.png" alt="닥터 퍽" class="img">
+					      <p class="text">
+					        왼쪽부터 루인은 대부분의 모든 살인마에게 추천되며 발전기 스킬체크 대성공당 1.6초 스킬체크 그냥 성공당 7초 이상의 시간을 늦출 수 있다.<br>
+					        한방퍽은 게임이 끝나갈 때 1~2킬 많을때는 3킬까지도 더 할 수 있게해주는 퍽이다.<br>
+					        브루탈은 판자를 부수는 시간을 빠르게 해줘 추격시 판자를 더 빠르게 뺼 수 있는 능력을 준다.<br>
+					        엔듀링은 칼찌를 맞을 경우 칼찌의 경직 시간을 75%나 줄여주고 판자를 맞을 경우에도 빠르게 회복이 가능하다.<br></p>
+					      <h4 class="text">위 세팅중 하나 정도를 빼고 넣어볼 만한 퍽으로는 다음과 같은 것들이 있다.</h4>
+					      <img src="../others/공략관련 이미지/불안한 존재.png" alt="불안한 존재" class="img">
+					      <p class="text">트래퍼의 퍽중 하나인 불안한 존재로 주로 저랭크에서 사용하면 효과가 좋은퍽이다. 발전기 견제와 동시에 칼찌의 성공률도 낮출 수 있다.</p>
+					      <img src="../others/공략관련 이미지/밤부즐.png" alt="밤부즐" class="img">
+					      <p class="text">클라운의 퍽중 하나인 밤부즐은 기본적으로 창틀 넘는 속도가 빨라지고, 넘은 창틀은 16초 동안 봉쇄되기 때문에(창틀 하나에만 적용)
+					        작집과, 돌담, 혹은 그 외 1창문 의존 인성존들을 강행돌파할 수 있게 해준다.</p>
+					      <img src="../others/공략관련 이미지/바칠.png" alt="바칠" class="img">
+					      <p class="text">카니발의 퍽중 하나인 바베큐&칠리는 색적 능력도 탁월하지만 전구 같은 경우에는 애드온을 사용하기 위한 블러드 포인트벌이 용으로 사용해도 나쁘지 않다.</p>
+					      <img src="../others/공략관련 이미지/너스콜링.png" alt="너스콜링" class="img">
+					      <p class="text">너스의 퍽중 하나인 너스콜링은 만약 당신이 캠핑을 하지 않는다면 탁월한 선택이 될 수도 있다. 생존자의 정신 가다듬기도 치료에 포함되기 때문이다.</p>
+					    </div>
+					    <div id="addon-setting">
+					      <hr>
+					      <h4 class="text">추천 애드온 세팅</h4>
+					      <img src="../others/공략관련 이미지/전구 애드온 1.png" alt="닥터 애드온" class="small-img" align="left">
+					      <p class="text">체스킹 + 광이 나는 전극<br>
+					        클래식 전구 최강의 조합으로
+					    체스킹 애드온이 색적 능력, 생존자 교란 능력, 추격 능력 등
+					    세 마리의 토끼를 동시에 잡았기 때문에
+					    전구에게 최강의 색적 능력을 부여해줌과 동시에 추격 능력을 더욱 향상시켜줄 수 있다.
+					    전극은 취향에 따라 초록 전극 혹은 갈색전극을 써도 되는데,
+					    초록 전극 같은 경우 범위는 좋지만 차징 시간이 너무 길어서 추격전 중 효율이 떨어지고,
+					    똥전극 같은 경우 차징 시간이 짧지만 범위가 아쉬울 때가 많다.<br><br>
+					      </p><br>
+					      <img src="../others/공략관련 이미지/전구 애드온 2.png" alt="닥터 애드온" class="small-img" align="left">
+					      <p class="text">체스킹 대신 넣어봄직한 애드온들<br>
+					        "통제" - 카터의 공책 애드온의 가장 큰 장점은 바로 광기 2단계 상태에서 생성된 전구 환영도 오라로 볼 수 있다는 점이다.<br>
+					  2단계로만 만들어 놓으면 항시 GPS 효과를 가질 수 있지만 이 효과는 초록, 노랑 통제 애드온에도 부착되어 있기 때문에 꼭 보라 통제를 쓸 필요는 없다.<br>
+					  "질서" - 카터의 공책 애드온의 가장 큰 장점은 환영 판자를 생성시킨다는 점이다.<br>
+					이미 전구에 의해 파괴된 판자를 환영 판자로 만들어서
+					생존자와의 추격전에서 큰 이득을 볼 수 있으며 이 효과 역시 노랑, 똥색 질서 애드온에도 부착되어 있기 때문에 꼭 보라 질서를 쓸 필요는 없다.<br>
+					"징계" - 카터의 공책 애드온의 경우, 추격 중인 생존자에게 전구가 바로 등 뒤에 있는듯한 붉은 불빛과 심장소리 사운드를 제공해준다.<br>
+					광기 2단계의 생존자의 경우 추격이 시작되고 10초 동안만 적용되고,
+					광기 3단계의 생존자의 경우 추격 중에는 항상 적용 되는데 이 효과의 경우, 초록과 노랑 징계 애드온은 발동 확률과 시간 제한이 정해져 있기 때문에 보라 징계를 쓰는 것을 권한다.<br>
+					복종" - 카터의 공책 애드온은 광기 3단계의 생존자를 항상 탈진 상태이상에 걸리게 한다.<br>
+					추격전 중 스프나 데하와 같은 질주 계열 퍽을 사용할 수 없게 하는건 굉장히 좋은 부분이지만,
+					가성비가 좋은 편이 아니고 이를 대체할 하위 등급 애드온도 없기 때문에
+					가급적 앞서 설명한 세 애드온을 사용하는 것을 권한다.
+					<img src="../others/공략관련 이미지/전구 애드온 3.png" alt="닥터 애드온" class="small-img" align="left">
+					<p class="text">버려진 테이프 + 인터뷰 테이프<br>
+					쌍테이프 세팅으로 불리는 이 세팅은 전기장 방출을 최고의 범위로 사용 가능하게 해준다. 넓은 범위와 긴 사거리, 매우 짧은 차징 시간 이라는 장점을 가지고 있지만 광기에 부착되는 추가 디버프가 없어 색적 능력과 추격 능력은 다소 떨어진다.<br><br>
+					</p>
+					    </div>
+					    <div id="game-operation">
+					      <hr>
+					      <h4 class="text">게임 운영 방법</h4>
+					      <p class="text"> 처음에 물리치료 요법으로 루인쪽으로 이동하면서 루인근처에서 전기치료 요법 자기장 켜주고
+					루인 근처에서 생존자가 발견되면 바로 쫓고 없으면 루인 근처 발전기로 이동하면서 하나 찾아서 거는게 시작이다.<br>
+					일단 한명을 최대한 빨리 눕히고 갈고리에 건후 다른 생존자들 광기 쌓아주고
+					발전기 견제하다가 구출되면 바로 돌아가서 패트롤 해주는식으로 운영하는 것이 기본이다.
+					이렇게 해서 한놈 보냈으면 나머지 2,3단계 지져놓은거 통제애드온으로 확인한다음에 이동해서 또다시 추격하는 형식인데
+					이렇게 해서 첫어그로 잡고 패트롤해서 천국보내줬으면 나머지 생존자들의 위치확인후에 쫓아가서 죽이고 2명남았을때는 전구가 발전기
+					다 돌아간거 아닌이상 올킬이라고 보면 된다.<br> 닥터도 패트롤 절대 실패하면 안되는데
+					갈고리에서 구출된 생존자 핏자국을 놓쳤어도 침착하게 갈고리 주변에서 2단계 환영이 보이는쪽으로 이동하면 다친 생존자가
+					3단계 해제중 일테니까 침착하게 판단하면된다. 결국엔 닥터는 통제애드온의 의존성이 좀 심하며
+					한명 죽이고 한명이 갈고리에 걸린 상태면 좀더 공격적으로 나가는걸 추천한다.<br>
+					닥터하면서 기억해야할 3가지<br>
+					1. 첫어그로는 3단계만들어주기 패트롤 실패하지 않기 만약에 핏자국 놓쳤어도 침착하게 구출된 갈고리에서 가까운 환영보고 따라가기<br>
+					2. 전구는 애드온마다 운영방법이 달라지므로 한가지의 운영방법 고수하지 않기.<br>
+					3. 전구는 색적이 강한 살인마이므로 이걸 강점으로 삼아서 굴려나가기.<br>
+					      </p>
+					    </div>
+					  </div>
+					</article>
+				</section>
+
+				<footer>
+          <section class="community">
+            <div class="socialmedia">
+              <ul class="listes_socialmedia">
+                <li class="twitter_media"><a href="https://twitter.com/deadByBHVR" target="_blank" title="Twitter"></a></li>
+                <li class="facebook_media"><a href="https://www.facebook.com/DeadByDaylight/" target="_blank" title="Facebook"></a></li>
+                <li class="youtube_media"><a href="https://www.youtube.com/channel/UCaSgsFdGbwjfdawl3rOXiwQ" target="_blank" title="YouTube"></a></li>
+                <li class="instragram_media"><a href="https://www.instagram.com/deadbydaylight/" target="_blank" title="Instragram"></a></li>
+                <li class="twitch_media"><a href="https://www.twitch.tv/deadbydaylight" target="_blank" title="Twitch"></a></li>
+                <li class="steam_media"><a href="https://steamcommunity.com/app/381210" target="_blank" title="Steam"></a></li>
+                <li class="reddit_media"><a href="https://www.reddit.com/r/deadbydaylight/" target="_blank" title="Reddit"></a></li>
+                <li class="gamepedia_media"><a href="https://deadbydaylight.gamepedia.com/" target="_blank" title="Gamepedia"></a></li>
+                <li class='socialmedia-content'><a href="https://forum.deadbydaylight.com/en/" target="_blank"></a></li>
+              </ul>
+            </div>
+          </section>
+        </footer>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

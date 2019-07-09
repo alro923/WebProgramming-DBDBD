@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>캐릭터 창 세부</title>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../CSS/share.css">
+	<link rel="stylesheet" href="../CSS/tap-menu-design.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://www.blueb.co.kr/SRC2/swipemenu/jquery.touchSwipe.min.js"></script>
+    <script src="../JS/tab-menu.js"></script>
+    <style>
+    	@font-face {
+		  font-family: a타이틀고딕2;
+		  src: url('../others/a타이틀고딕2.ttf') format('truetype');
+		}
+
+		p { font-family: a타이틀고딕2; }
+    	body {
+    		background-image: url('../others/detail_bg/bg-legion.png');
+    		background-size: 100%;
+    		background-repeat: repeat;
+    	}
+
+    	article {
+			background-color: white;
+			margin: 3% 20%;
+			opacity: 0.7;
+			padding: 3%;
+			border-radius: 20px;
+		}
+
+		h1 {
+			font-size: 300%;
+			text-align: center;
+			color: white;
+			text-shadow: black 2px 2px 5px;
+		}#perk {
+      width: 100%;
+      height: 100%;
+    }
+.small-img {
+      width: 30%;
+      height: 30%;
+    }
+.img {
+      width: 100%;
+      display: block;
+      margin: 0px auto;
+    }
+    </style>
+</head>
+
+<body>
+	<header class="top_banner">
+		<a id="go_main" href="main.html"></a>
+	</header>
+
+	<div class="containerbar">
+		<div id="sidebar">
+			<ul>
+				<li><a href="notice.html">공지</a></li>
+				<li><a href="update.html">업데이트</a></li>
+				<li><a href="info.html">게임정보</a></li>
+				<li><a href="character.html">공략글</a></li>
+				<li><a href="word.html">용어정리</a></li>
+				<li><a href="service.html">서비스</a></li>
+			</ul>
+		</div>
+
+		<div class="main-content">
+			<div class="swipe-area"></div>
+			<a href="#" data-toggle=".containerbar" id="sidebar-toggle"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+			<div class="content">
+				<section>
+					<h1>The Legion</h1>
+					<article class="box">
+						<div id="character-info">
+
+					    <div id="character-perk">
+					      <hr>
+					      <h1 class="text">살인마 고유 퍽</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/군단.png" alt="군단 이미지" id="perk">
+					    </div>
+
+					    <div id="character-skill">
+					      <hr>
+					      <h1 class="text">살인마 고유 능력</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/군단 능력.png" alt="군단 능력" class="small-img" align="left">
+					      <ul>
+					        <br>
+					        <li class="text">음산한 광기가 활성화되며 군단은 무시무시한 분노 상태로 변하며, 다음 효과가 활성화된다:
+					          <ul>
+					            <li class="text">군단은 기본 이동 속도보다 더 빠르게 움직인다.</li>
+					            <li class="text">군단은 판자를 넘을 수 있지만 부수지는 못한다.</li>
+					            <li class="text">살인마에게 생존자의 발자국이 보이지 않는다.</li>
+					            <li class="text">공격이 빗나가면 재사용 대기시간이 감소한다.</li>
+					          </ul>
+					</li>
+					        <li class="text">음산한 광기가 발동된 상태에서, 깊은 상처 상태가 아닌 생존자를 공격하면 다음과 같은 효과가 발생한다:
+					        <ul>
+					          <li class="text">깊은 상처 상태를 적용한다.</li>
+					          <li class="text">생존자가 부상 상태가 아니라면 그들을 부상 상태로 만든다.</li>
+					          <li class="text">살인마의 능력 게이지가 모두 재충전된다.</li>
+					          <li class="text">살인마의 본능'을 깨워 살인마의 공포 범위 내에 깊은 상처 상태가 아닌 모든 생존자의 위치를 드러낸다.</li>
+					        </ul>
+					      </li>
+					        <li class="text">음산한 광기가 활성화되어 있는 동안 깊은 상처 상태인 생존자를 공격하거나 공격이 빗나갈 경우 다음과 같은 효과가 발생한다:
+					        <ul>
+					          <li class="text">살인마의 모든 능력 게이지가 사라지며, 효과가 즉시 종료된다.</li>
+					        </ul></li>
+					        <li class="text">음산한 광기가 활성화되어 있지 않은 상태에서 기본 공격으로 생존자를 공격하면 능력 게이지가 최대치의 절반까지 떨어진다.</li>
+					      </ul>
+					    </div>
+					    <div id="character-addon">
+					      <br><br>
+					      <hr>
+					      <h1 class="text">살인마 애드온 목록</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/군단 애드온.png" alt="군단 애드온" class="img">
+					    </div>
+					  </div>
+					  <div id="main-article">
+					    <hr>
+					    <h1>플레이시 팁</h1>
+					    <hr>
+					    <div id="pac">
+					      <h3 class="text"> 군단의 장단점</h3>
+					      <h4 class="text"> 군단의 장점</h4>
+					      <ul>
+					        <li class="text">
+					          <h4 class=text>안정적인 기동력과 우수한 색적능력을 둘 다 가진 능력</h4>
+					          일반적으로 데바데의 살인마들은 기동력이 뛰어나다면 너스, 스피릿처럼 색적 능력이 떨어지거나 힐빌리처럼 조종이 어려운 경향이 있고, 반대로 나이트메어, 닥터처럼 탐색 능력이 뛰어나다면 기동력이 떨어지는 경향이 있는데
+					          군단은 기동성도 좋은 주제에 색적력도 좋고, 조종도 어렵지 않다. 발자국 안 보이는 정도는 능력 발동 타이밍 자체가 생존자를 발견하고 쓰고 집요하게 쫒아가는 특성을 가지기에 디메리트라 보기 힘들어
+					           사실상 능력 종료 후의 탈진 외엔 디메리트가 없다.
+					        </li>
+					        <br>
+					        <li class="text">
+					          <h4 class=text>뛰어난 운영 능력</h4>
+					          군단은 추격 과정에서 마주치자마자 몇 초 이내에 한 대를 반드시 때릴 수 있으며, 다른 생존자들의 위치 또한 확인이 가능하기에 운영할 때 큰 도움이 된다.
+					          근처에 다른 생존자가 있으면 그 사람도 한 대 치고 지속적으로 추격를 할 수 있으며, 출혈 상태가 된 생존자는 짧은 시간이나마 출혈 치료와 풀피 회복을 위해 시간을 소비한다.
+					      이 과정에서 구급상자 소모를 강요할 수 있다. 또한, 한 명이 갈고리에 걸린 상태에서 캠핑할 때에도 유리한데,
+					      능력 사용 시 빠른 이동 속도와 뛰어넘기를 살려 뛰어난 패트롤 능력을 보여주는 편이기 때문에 생존자 입장에선 함부로 구하러 접근하기 힘든 편이다.  </li>
+					    <li class="text">
+					      <h4 class=text>쉬운 블러드포인트, 엠블럼 획득</h4>
+					    계속 추격하고, 공격하고, 눕히고 등 다양한 행위를 장기전까지 끌고 가는 군단 특성상 높은 점수 획득이 가능하여 타 살인마에 비해 많은 평균 블러드포인트 획득이 가능한데,
+					     정상적인 플레이 시 매 판마다 아무리 못 해도 은장 엠블렘 이상은 빈번하게 나오는 편이다.
+					    능력의 특성상 추적자 항목에서 높은 점수를 얻기 쉽기도 하다.
+					    </li>
+					      </ul>
+					      <h4 class="text"> 군단의 단점</h4>
+					      <ul>
+					        <li class="text">
+					          <h4 class=text>빈약한 결정력</h4>
+					    군단의 최대의 단점. 능력으로 부상 입히기는 쉽지만, 그 다음 생존자를 눕히는 동안은 능력이 없는 것이나 다름 없다. 능력이 깊은 상처 상태에 빠뜨리는 것은 좋지만 추격 중에는 사실상 효과를 볼 수 없고,
+					    생존자가 스스로 치유할 수 있기까지 하다. 애드온으로 어느 정도 활용할 수 있지만, 이 과정에서 손해 보는 시간이 크다.
+					        </li>
+					        <br>
+					        <li class="text">
+					          <h4 class=text>리스크가 높은 능력</h4>
+					      군단의 능력은 높은 기동력을 가지고 있지만 시간 안에 생존자를 못 맞추거나 공격이 빗나가면 무려 4초간 앞이 거의 안 보이는 경직이 들어가며,
+					      그 이후에는 최대 20초간 능력 사용이 봉인된다. 이 경직 동안 생존자와의 거리가 크게 벌려지며 발자국을 제대로 못 읽으면 그대로 추격 종료가 될 가능성이 높다.
+					        </li>
+					        <li class="text">
+					          <h4 class=text>은근히 느린 능력 속도</h4>
+					        군단의 능력은 화면의 효과와 빠르게 창틀을 넘는 등의 효과로 매우 빨라 보이지만 실상은 그렇게 빠르지도 않다. 능력 사용 시 속도는 5m/s로, 이는 짧은 시간 동안 약 6m/s로 달릴 수 있게 해 주는 전력 질주보다도 느리다.
+					        그래도 긴 지속시간 덕에 제대로만 따라가면 타격은 확실히 할 수 있지만, 따라잡는 시간에 생존자가 인성존으로 들어가기도 쉽다.
+					        </li>
+					      </ul>
+					    </div>
+					    <div id="perk-setting">
+					      <hr>
+					      <h4 class="text">추천 퍽 세팅</h4>
+					      <img src="../others/공략관련 이미지/군단 퍽 1.png" alt="군단 퍽" class="img">
+					      <p class="text">
+					        가장 무난한 군단의 퍽 세팅으로 만약 생존자를 쫓다가 계속헤서 놓친다면 4번째 퍽인 감시와 학대를 빼고 레이스의 전승퍽인 집요한 사냥개를 채용 하는 것도 좋다.</p>
+					    </div>
+					    <div id="addon-setting">
+					      <hr>
+					      <h4 class="text">추천 애드온 세팅</h4>
+					      <img src="../others/공략관련 이미지/런구 애드온 1.png" alt="군단 애드온" class="small-img" align="left">
+					      <p class="text">조이의 믹스 테이프 + 차가운 흙<br>
+					        능력이 끝날 때의 경직 시간을 줄여주는 세팅으로 생존자를 추격할때 처음은 능력으로 때리고 두번째는 능력으로 가까이 접근해 경직이 빠르게 풀리는 것을 이용해 능력을 사용하지 않은 상태로 때려 생존자를 빈사상태로 만드는
+					        세팅이다.이 세팅의 주의 할 점은 능력을 마구 사용하면 그냥 걸어서 쫓아갈 때보다 시간이 더 오래걸릴 수도 있다는 점으로 생존자와의 거리 유지가 중요하다.<br><br><br><br>
+					      </p><br>
+					    </div>
+					    <div id="game-operation">
+					      <br><hr>
+					      <h4 class="text">게임 운영 방법</h4>
+					      <p class="text">
+					        군단은 능력으로 한대때리고 능력을 풀고 기본 평타로 때려 눕히는 것이 기본이다.
+					      1대를 거의 무조건 때리고 시작할 수 있는데 이것은 굉장히 큰 장점이다. 일단 1대를 때리면 4.6의 이동속도로 4.4의 이동속도와 술래잡기를 하는 것이기 때문에
+					      판자나 구조물이 없다면 굉장히 빠른 시간내에 생존자를 잡아낼 수 있다.<br>
+					다음은 정말 중요한 순간의 승부수로 던지는 '심리전' 군단은 이게 노 패넡티로 벽, 판자 하나두고 무한 심리전이 가능하다. 그 이유는 다른 뚜벅이 살인마들은 심리전을 성공하면 괜찮지만
+					만약 실패할 경우 생존자는 이미 저 멀리 달아나 있는 경우가 굉장히 많다. 이 경우 살인마의 시간적 손해는 생존자가 구조물에 도착한다면 기하급수적으로 증가한다.
+					하지만 군단은 심리전에 실패해도 능력을 쓰면 금방 따라가기 때문에 다른 살인마들에 비해 손해가 그렇게 크지 않다.
+					      </p>
+					    </div>
+					  </div>
+					</article>
+				</section>
+
+				<footer>
+          <section class="community">
+            <div class="socialmedia">
+              <ul class="listes_socialmedia">
+                <li class="twitter_media"><a href="https://twitter.com/deadByBHVR" target="_blank" title="Twitter"></a></li>
+                <li class="facebook_media"><a href="https://www.facebook.com/DeadByDaylight/" target="_blank" title="Facebook"></a></li>
+                <li class="youtube_media"><a href="https://www.youtube.com/channel/UCaSgsFdGbwjfdawl3rOXiwQ" target="_blank" title="YouTube"></a></li>
+                <li class="instragram_media"><a href="https://www.instagram.com/deadbydaylight/" target="_blank" title="Instragram"></a></li>
+                <li class="twitch_media"><a href="https://www.twitch.tv/deadbydaylight" target="_blank" title="Twitch"></a></li>
+                <li class="steam_media"><a href="https://steamcommunity.com/app/381210" target="_blank" title="Steam"></a></li>
+                <li class="reddit_media"><a href="https://www.reddit.com/r/deadbydaylight/" target="_blank" title="Reddit"></a></li>
+                <li class="gamepedia_media"><a href="https://deadbydaylight.gamepedia.com/" target="_blank" title="Gamepedia"></a></li>
+                <li class='socialmedia-content'><a href="https://forum.deadbydaylight.com/en/" target="_blank"></a></li>
+              </ul>
+            </div>
+          </section>
+        </footer>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

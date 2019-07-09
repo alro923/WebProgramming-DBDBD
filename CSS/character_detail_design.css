@@ -1,0 +1,6 @@
+@font-face { /*폰트 선언*/
+  font-family: a타이틀고딕2;
+  src: url('../others/a타이틀고딕2.ttf') format('truetype');
+}
+
+p { font-family: a타이틀고딕2; } /*본문 적용*/

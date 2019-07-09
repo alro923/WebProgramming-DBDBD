@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>캐릭터 창 세부</title>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../CSS/share.css">
+	<link rel="stylesheet" href="../CSS/tap-menu-design.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://www.blueb.co.kr/SRC2/swipemenu/jquery.touchSwipe.min.js"></script>
+    <script src="../JS/tab-menu.js"></script>
+    <style>
+    	@font-face {
+		  font-family: a타이틀고딕2;
+		  src: url('../others/a타이틀고딕2.ttf') format('truetype');
+		}
+
+		p { font-family: a타이틀고딕2; }
+    	body {
+    		background-image: url('../others/detail_bg/bg-the-clown.jpg');
+			background-size: 100%;
+    		background-position: center top;
+    		background-repeat: no-repeat;
+    	}
+    	article {
+			background-color: white;
+			margin: 3% 20%;
+			opacity: 0.7;
+			padding: 3%;
+			border-radius: 20px;
+		}
+
+		h1 {
+			margin-top: 10%;
+			font-size: 300%;
+			text-align: center;
+			color: white;
+			text-shadow: black 2px 2px 5px;
+		}
+		#perk {
+      width: 100%;
+      height: 100%;
+    }
+.small-img {
+      width: 30%;
+      height: 30%;
+    }
+.img {
+      width: 100%;
+      display: block;
+      margin: 0px auto;
+    }
+    </style>
+</head>
+
+<body>
+	<header class="top_banner">
+		<a id="go_main" href="main.html"></a>
+	</header>
+
+	<div class="containerbar">
+		<div id="sidebar">
+			<ul>
+				<li><a href="notice.html">공지</a></li>
+				<li><a href="update.html">업데이트</a></li>
+				<li><a href="info.html">게임정보</a></li>
+				<li><a href="character.html">공략글</a></li>
+				<li><a href="word.html">용어정리</a></li>
+				<li><a href="service.html">서비스</a></li>
+			</ul>
+		</div>
+
+		<div class="main-content">
+			<div class="swipe-area"></div>
+			<a href="#" data-toggle=".containerbar" id="sidebar-toggle"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+			<div class="content">
+				<section>
+					<h1>The Clown</h1>
+					<article class="box">
+						<div id="character-info">
+
+							<div id="character-perk">
+								<hr>
+								<h1 class="text">살인마 고유 퍽</h1>
+								<hr>
+								<img src="../others/공략관련 이미지/방구.png" alt="클라운 이미지" id="perk">
+							</div>
+
+							<div id="character-skill">
+								<hr>
+								<h1 class="text">살인마 고유 능력</h1>
+								<hr>
+								<img src="../others/공략관련 이미지/방구 능력.png" alt="클라운 능력" class="small-img" align="left">
+								<ul>
+									<br>
+									<li class="text">기본 소지량은 4개. 애드온을 이용해 최대 7개까지 늘릴 수 있다.</li>
+									<li class="text">마취 가스가 퍼진 지역의 지속시간은 약 10초 동안이며, 마취 가스 내에 있는 생존자들은 마취 상태가 된다. 마취 상태일 때는 이동 속도가 15% 감소하며,
+										시야가 흐려지고 발작적으로 기침을 한다. 마취 가스에서 벗어나도 2초 동안은 마취 상태가 남아있다.</li>
+									<li class="text">병을 전부 소모하면 그 자리에서 재충전할 수 있다. 소지량이 남아 있어도 중간에 재충전할 수 있다. 재충전하는 동안엔 이동속도가 상당히 느려진다.</li>
+									<li class="text">병은 장애물에 부딪히면 깨진다. 바닥뿐만이 아니라 나무나 벽에 부딪혀도 깨지며, 생존자를 맞춰도 깨진다. 높은 곳에서 깨지면 독가스가 아래로 가라앉으면서 더 넓은 범위에 퍼진다.</li>
+								</ul>
+							</div>
+							<div id="character-addon">
+								<br><br>
+								<hr>
+								<h1 class="text">살인마 애드온 목록</h1>
+								<hr>
+								<img src="../others/공략관련 이미지/방구 애드온.png" alt="클라운 애드온" class="img">
+							</div>
+						</div>
+						<div id="main-article">
+							<hr>
+							<h1>플레이시 팁</h1>
+							<hr>
+							<div id="pac">
+								<h3 class="text"> 방구의 장단점</h3>
+								<h4 class="text"> 방구의 장점</h4>
+								<ul>
+									<li class="text">
+										<h4 class=text>만담용 특제 가스를 이용한 이동 방해 효과</h4>
+										카만담용 특제 가스의 효과를 입은 생존자의 이동속도가 느려지는 것을 이용해 손쉽게 생존자를 잡거나, 생존자가 도망칠 경로에 가스를 깔아 생존자의 퇴로를 막을 수 있다.
+									</li>
+									<br>
+									<li class="text">
+										<h4 class=text>속도전에 능함</h4>
+								보통 생존자들은 살인마와 거리를 벌리기 위해 창틀을 자주 이용하고 판자를 사용하는데 가스에 중독된 생존자는 창틀을 느리게 넘으며 판자 심리전 도중에 가스를 맞으면 판자가 필수적으로 빠지기 때문에 오브젝트를 이용한 속도전에 다른 살인마보다 능하다.  </li>
+								</ul>
+								<h4 class="text"> 방구의 단점</h4>
+								<ul>
+									<li class="text">
+										<h4 class=text>가스 투척 능력에 비례한 성능</h4>
+								실제로 만담용 특제 가스를 사용해보면 난이도가 제법 있는 편인데, 소지량이 네 병밖에 안되는 가스를 한 발이라도 빗맞출 경우 생각보다 큰 리스크로 다가온다.
+								 그 이유는 가스를 재충전하는 시간동안 생존자를 놓치기 쉽고 추격중이 아니더라도 일분일초가 아쉬운 살인마에게는 부담이 될 수밖에 없기때문. 따라서 가스 명중률에 따라 정직한 성능 차이가 난다.
+									</li>
+									<br>
+									<li class="text">
+										<h4 class=text>사운드 플레이에 불리함</h4>
+									클라운은 특제가스 투척, 창틀 넘기, 판자 파괴, 발전기 손상중에 기침 소리를 내며,
+									생존자를 공격하거나 즉결 처형 시에는 호쾌한 웃음 소리를 낸다. 이렇게 행동을 할 때마다 내는 각종 소리가 다른 살인마들보다 유난히 많아서 숙련된 생존자들은 소리만 듣고 클라운이 뭘 할지 다 파악할 수 있게 된다.
+									</li>
+								</ul>
+							</div>
+							<div id="perk-setting">
+								<hr>
+								<h4 class="text">추천 퍽 세팅</h4>
+								<img src="../others/공략관련 이미지/방구 퍽 1.png" alt="클라운 퍽" class="img">
+								<p class="text">
+									왼쪽부터 루인은 대부분의 모든 살인마에게 추천되며 발전기 스킬체크 대성공당 1.6초 스킬체크 그냥 성공당 7초 이상의 시간을 늦출 수 있다.<br>
+									한방퍽은 덫구의 후반 역전퍽이며 뚜벅이들의 희망과도 같다. 0~2킬까지 밖에 못하는 판을 3~4까지도 노리게 해주는 필수 퍽이다.<br>
+									클라운의 퍽인 밤부즐은 작집과 같은 인성존을 봉쇄함으로써 추격의 시간을 대폭 줄여줄 수 있다.<br>
+								브루탈은 판자를 부수는 시간을 빠르게 해줘 추격시 판자를 더 빠르게 뺼 수 있는 능력을 준다.</p>
+							</div>
+							<div id="addon-setting">
+								<hr>
+								<h4 class="text">추천 애드온 세팅</h4>
+								<img src="../others/공략관련 이미지/방구 애드온 1.png" alt="클라운 애드온" class="small-img" align="left">
+								<p class="text">표백제 플라스크 + 에테르 15 Vol%<br>
+									클라운의 이동속도 저하능력을 극대화시켜 추격전에 우위를 가져가는 세팅으로 에테르 15 Vol%가 부족하다면 싸구려 진이나 끈적한 탄산 음료병으로 대체 가능하다.<br><br><br><br>
+								</p><br>
+								<img src="../others/공략관련 이미지/방구 애드온 2.png" alt="클라운 애드온" class="small-img" align="left">
+								<p class="text">빨간 머리의 새끼손가락 + 싸구려 진<br>
+									한방 방구라고 불리며 빨간색 애드온의 효과로 병을 던져 생존자를 직접 맞추면 생존자가 한대만 맞아도 빈사상태가 되게하는 세팅이다.
+								</p><br><br>
+							</div>
+							<div id="game-operation">
+								<br><hr>
+								<h4 class="text">게임 운영 방법</h4>
+								<p class="text">
+									보조 능력인 만담용 특제 가스는 투척후 약 10초간 가스 지대를 형성하여 들어오는 생존자를 중독시킨다. 중독된 생존자는 이동속도가 눈에 띄게 느려지므로 판자가 있다면 판자를 사용하게 강요할수 있고,
+									 창가에 던져 둬서 창문을 넘을때 강제로 중독시켜 심리전에서 이득을 볼 수도 있다. 투척시 포물선으로 날아가고, 차징하면 더 멀리 날릴 수 있다.<br>
+										기본적으로 헌트리스처럼 직접 맞추는게 아니라 생존자의 진행방향에 미리 던져 둬서 이동경로로 조금씩 이득을 봐가면서 다운시키는 살인마라고 할 수 있다.<br>
+						클라운이 던지는 가스병은 화면상에 표시되는 에임보다 약간 더 높은 방향으로 투척된다. 따라서 병을 제대로 맞히려면 연습을 통해 감을 잡아야 한다.<br>
+						클라운의 능력을 제대로 끌어올릴 수 있는 애드온은 희귀함 등급의 표백제 플라스크이다. 안그래도 가스 범위 안에 들어가면 느려지는 속도를 더욱 느리게 만들어서 게임을 자신에게 더욱 유리하게 만들 수 있다.
+								</p>
+							</div>
+						</div>
+					</article>
+				</section>
+
+				<footer>
+          <section class="community">
+            <div class="socialmedia">
+              <ul class="listes_socialmedia">
+                <li class="twitter_media"><a href="https://twitter.com/deadByBHVR" target="_blank" title="Twitter"></a></li>
+                <li class="facebook_media"><a href="https://www.facebook.com/DeadByDaylight/" target="_blank" title="Facebook"></a></li>
+                <li class="youtube_media"><a href="https://www.youtube.com/channel/UCaSgsFdGbwjfdawl3rOXiwQ" target="_blank" title="YouTube"></a></li>
+                <li class="instragram_media"><a href="https://www.instagram.com/deadbydaylight/" target="_blank" title="Instragram"></a></li>
+                <li class="twitch_media"><a href="https://www.twitch.tv/deadbydaylight" target="_blank" title="Twitch"></a></li>
+                <li class="steam_media"><a href="https://steamcommunity.com/app/381210" target="_blank" title="Steam"></a></li>
+                <li class="reddit_media"><a href="https://www.reddit.com/r/deadbydaylight/" target="_blank" title="Reddit"></a></li>
+                <li class="gamepedia_media"><a href="https://deadbydaylight.gamepedia.com/" target="_blank" title="Gamepedia"></a></li>
+                <li class='socialmedia-content'><a href="https://forum.deadbydaylight.com/en/" target="_blank"></a></li>
+              </ul>
+            </div>
+          </section>
+        </footer>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

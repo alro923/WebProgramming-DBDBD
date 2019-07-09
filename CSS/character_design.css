@@ -1,0 +1,125 @@
+@font-face { /*폰트 사용*/
+  font-family: a번개;
+  src: url('a번개.ttf') format('truetype');
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 40;
+}
+
+* {/*전체 폰트 적용*/
+  font-family: a번개;
+}
+
+table{ /*table태그 스타일 적용*/
+  width: 100%;
+}
+
+#characters__list-title{ /*charactiers_list-title아이디에 스타일 적용*/
+	text-decoration: none; /*글자 장식 제거*/
+	color: white; /*글자 색상 흰색 변경*/
+}
+
+img {
+  width: 100%; /*너비 조정*/
+  height: auto;
+}
+h2 {
+	margin-left: 10%; /*간격 조정*/
+  margin-bottom: .5em;
+  color: white;
+  padding-left: 2%;
+}
+
+.killers-container{
+  display: grid; /*그리드 레이아웃 적 */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /*그리드 형태 조절*/
+  grid-gap: 1em; /*셀간의 공백 설정*/
+  margin-left: 25%;
+}
+.survivors-container{
+  display: grid; /*그리드 레이아웃 적 */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /*그리드 형태 조절*/
+  grid-gap: 1em; /*셀간의 공백 설정*/
+  margin-left: 20px;
+}
+
+
+/* hover styles */
+.characters__list-item {
+  position: relative; /*상대적 위치 적용*/
+}
+
+.characters__list-item {
+  line-height: 0; /*줄 높이 적용*/
+  overflow: hidden; /*본문을 벗어날 경우 보이지 않음*/
+}
+
+.characters__list-item img {
+  filter: blur(0px); /*흐리게 만듦*/
+  transition: filter 0.3s ease-in; /*지연을 주어 에니메이션 구현*/
+  transform: scale(1.1); /*1.1배 확대*/
+}
+
+.characters__list-title {
+  font-size: 1.5em; /*본트 사이즈*/
+  font-weight: bold; /*두께 적용*/
+  text-decoration: none; /*장식 제거*/
+  z-index: 1; /*z-index로 화면에 띄울 우선순위 설정*/
+  position: absolute; /*상대적 위치 속성*/
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0; /*투명도*/
+  transition: opacity .5s; /*투명도 에니메이션*/
+  color: white; /*글자 색*/
+  display: flex; /*영역이 item에 맞게 줄어든다*/
+  align-items: center; /*item배열을 가운대로 한다*/
+  justify-content: center; /*컨테이너 가운데에서부터 배치(수평방향 정렬)*/
+}
+
+.characters__list-item:hover .characters__list-title {
+  opacity: 1; /*투명도*/
+}
+
+.characters__list-item:hover .characters__list-item img {
+  filter: blur(2px); /*흐림효과*/
+}
+
+
+@media (hover: none) { /*미디어 쿼리*/
+  .characters__list-title {
+    opacity: 1;
+  }
+  .characters__list-item img {
+    filter: blur(2px);
+  }
+}
+
+.main-content {
+	position: inline-block;
+  margin: 20 auto;
+  text-align : center;
+}
+
+.killers-container {
+	float: left;
+}
+
+.survivors-container {
+	float: left;
+}
+
+.containerbar::after {
+	display: block;
+	content: '';
+	clear: both; /*오른쪽 왼쪽을 취소*/
+}
+
+.content{
+
+}

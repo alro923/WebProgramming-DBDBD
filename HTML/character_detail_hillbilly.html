@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>캐릭터 창 세부</title>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../CSS/share.css">
+	<link rel="stylesheet" href="../CSS/tap-menu-design.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://www.blueb.co.kr/SRC2/swipemenu/jquery.touchSwipe.min.js"></script>
+    <script src="../JS/tab-menu.js"></script>
+    <style>
+    	@font-face {
+		  font-family: a타이틀고딕2;
+		  src: url('../others/a타이틀고딕2.ttf') format('truetype');
+		}
+
+		p { font-family: a타이틀고딕2; }
+    	body {
+    		background-image: url('../others/detail_bg/bg-hillbilly.png');
+    		background-size: 20%;
+    		margin: 10px;
+    		background-repeat: no-repeat;
+    	}
+    	article {
+			background-color: white;
+			margin: 3% 20%;
+			opacity: 0.7;
+			padding: 3%;
+			border-radius: 20px;
+		}
+
+		h1 {
+			font-size: 300%;
+			text-align: center;
+			color: white;
+			text-shadow: black 2px 2px 5px;
+		}#perk {
+      width: 100%;
+      height: 100%;
+    }
+.small-img {
+      width: 30%;
+      height: 30%;
+    }
+.img {
+      width: 100%;
+      display: block;
+      margin: 0px auto;
+    }
+    </style>
+</head>
+
+<body>
+	<header class="top_banner">
+		<a id="go_main" href="main.html"></a>
+	</header>
+
+	<div class="null"></div>
+
+	<div class="containerbar">
+		<div id="sidebar">
+			<ul>
+				<li><a href="notice.html">공지</a></li>
+				<li><a href="update.html">업데이트</a></li>
+				<li><a href="info.html">게임정보</a></li>
+				<li><a href="character.html">공략글</a></li>
+				<li><a href="word.html">용어정리</a></li>
+				<li><a href="service.html">서비스</a></li>
+			</ul>
+		</div>
+
+		<div class="main-content">
+			<div class="swipe-area"></div>
+			<a href="#" data-toggle=".containerbar" id="sidebar-toggle"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+			<div class="content">
+				<section>
+					<h1>The Hillbilly</h1>
+					<article class="box">
+						<div id="character-info">
+
+					    <div id="character-perk">
+					      <hr>
+					      <h1 class="text">살인마 고유 퍽</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/톱구.png" alt="힐빌리 이미지" id="perk">
+					    </div>
+
+					    <div id="character-skill">
+					      <hr>
+					      <h1 class="text">살인마 고유 능력</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/톱구 능력.png" alt="힐빌리 능력" class="small-img" align="left">
+					      <ul>
+					        <br>
+					        <li class="text">마우스 우클릭을 꾹 눌러 시동을 걸 수 있으며, 시동 게이지가 가득 차면 자동으로 질주를 한다. 질주 중 우클릭을 떼면 질주를 멈춘다.
+					           시동 게이지를 채우는 도중 우클릭을 떼면 시동을 즉시 멈추지 않고 대신 게이지가 서서히 줄어든다. 우클릭으로 시동을 거는 도중에는 이동속도가 소폭 감소한다.</li>
+					        <li class="text">애드온이 없다면 질주 도중 방향을 전환하면 속도가 대폭 감소한다.</li>
+					        <li class="text">생존자를 가격하면 즉시 빈사(지렁이) 상태로 만든다.</li>
+					        <li class="text">지형지물에 부딪힐 경우 질주를 멈춘다.</li>
+					        <li class="text">쓰러진 판자에 돌진하는 경우 질주를 멈추고 대신 판자를 부순다. 다만 쓰러지고 있는 판자에 맞는 경우 질주를 멈추고 스턴에 걸린다.</li>
+					      </ul>
+					    </div>
+					    <div id="character-addon">
+					      <br><br><br><br>
+					      <hr>
+					      <h1 class="text">살인마 애드온 목록</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/톱구 애드온.png" alt="힐빌리 애드온" class="img">
+					    </div>
+					  </div>
+					  <div id="main-article">
+					    <hr>
+					    <h1>플레이시 팁</h1>
+					    <hr>
+					    <div id="pac">
+					      <h3 class="text"> 톱구의 장단점</h3>
+					      <h4 class="text"> 톱구의 장점</h4>
+					      <ul>
+					        <li class="text">
+					          <h4 class=text>높은 기동성을 바탕으로 한 뛰어난 운영 능력</h4>
+					          힐빌리의 특수 능력인 전기톱은 사용 시 이동 속도가 매우 빨라지기 때문에 사용자의 실력만 따라 준다면 말 그대로 맵을 종횡무진할 수 있다.
+					           패트롤 캠핑, 발전기 수리 방해, 터널링 등의 플레이를 매우 유연히 해낼 수 있기 때문에 시간 절약 등과 같은 큰 이득을 얻을 수 있다.
+					        </li>
+					        <br>
+					        <li class="text">
+					          <h4 class=text>일격기</h4>
+					          전기톱에 맞은 생존자는 한방에 눕기 때문에 추격 시간을 효율적으로 단축시킬 수 있다.
+					          특히 전기톱의 경우, 애드온 등 별 다른 제약 없이 생존자를 한방에 눕히기 때문에 실용성이 매우 좋은 편. 스노우볼을 굴리기도 좋다.
+					        </li>
+					        <br>
+					        <li class="text">
+					          <h4 class=text>낮은 애드온 유지비</h4>
+					          나이트메어나 트래퍼같은 경우 고효율 애드온의 유지비가 비싼 편인 데 반해 힐빌리는 타 뚜벅이들에 비해 유지비가 비교적 싼 편이다.
+					          자주 쓰이는 애드온인 카뷰레터 제조 설명서, 톰슨제 혼합물과 파멸의 판화가 희귀함 등급으로 그리 비싸지 않기 때문.
+					          사실 힐빌리는 현재까지도 너스, 카니발과 같이굉장히 희귀함 등급 애드온이 없고, 한 단계 낮은 애드온들이 한 단계 높은 애드온처럼 사용된다.
+					          그런데 아주 희귀함 등급의 애드온인 그을린 사슬과 톰슨제 밀주가 살짝 애매하다보니, 자연스럽게 희귀함 애드온에 몰린 것.
+					          블러드 포인트가 부족한 사람이라도 평범함 등급 애드온이 쓸만해서 좋다.
+					        </li>
+					      </ul>
+					      <h4 class="text"> 톱구의 단점</h4>
+					      <ul>
+					        <li class="text">
+					          <h4 class=text>조종하기 어려운 전기톱</h4>
+					          힐빌리가 저랭크에서 잘 안 쓰이는 이유. 전기톱 사용 시 방향전환 능력이 심히 떨어지게 되는데,
+					           초보자들은 높은 이동 속도와 낮은 방향전환 능력의 콜라보레이션 때문에 전기톱을 자유롭게 제어하지 못한다.
+					            게다가 고랭크의 경우에서도 자유롭지 못한 코너링 때문에 생존자가 구조물을 끼고돌 때 전기톱으로 대처하기 힘들다.
+					           톱은 직선상 공격이기때문에 꺾는 각도가 크지가 않다. 반드시 오른쪽 or 왼쪽 예측으로 찍어서 꺾어야한다.
+					        </li>
+					        <br>
+					        <li class="text">
+					          <h4 class=text>심하게 타는 맵빨</h4>
+					          힐빌리의 꽃은 높은 기동성을 통한 운영 및 맵 장악 능력에 있는데,
+					          썩은 들판이나 그늘진 숲과 같이 넓은 평지가 있는 맵에선 전기톱을 키고 종횡무진할 수 있는 반면
+					          지형지물이 많은 맵에서는 전기톱을 마음대로 활용하지 못해 기동성을 활용하기 힘들어진다.
+					           특히 사방이 벽으로 막혀 있는 치료관과 게임, 장애물이 많은 야마오카 가문 주택에서 이 단점이 확연히 드러난다.
+					        </li>
+					      </ul>
+					    </div>
+					    <div id="perk-setting">
+					      <hr>
+					      <h4 class="text">추천 퍽 세팅</h4>
+					      <img src="../others/공략관련 이미지/톱구 퍽 추천.png" alt="힐빌리 퍽" class="img">
+					      <p class="text">
+					        왼쪽부터 루인은 대부분의 모든 살인마에게 추천되며 발전기 스킬체크 대성공당 1.6초 스킬체크 그냥 성공당 7초 이상의 시간을 늦출 수 있다.<br>
+					        엔듀링은 칼찌를 맞을 경우 칼찌의 경직 시간을 75%나 줄여주고 판자를 맞을 경우에도 빠르게 회복이 가능하다.<br>
+					      바베큐엔 칠리는 힐빌리 같은 경우에는 기동력이 좋아서 보이는 즉시 생존자가 있는 곳으로 달려 갈 수 있어 굉장히 힐빌리와 상성이 좋다.</p>
+					      <p class="text">마지막으로 남은 한 자리는 다음 중에 하나를 채택하면 좋다.</p>
+					      <img src="../others/공략관련 이미지/사슴퍽.png" alt="사슴퍽" class="img">
+					      <p class="text">살인마 공용퍽 중 하나인 사슴퍽은 능력의 특성상 생존자를 지렁이 상태로 놔두는 경우가 생각보다 많이 생겨 지렁이를 탐색할 수 있는 사슴퍽을 채용하면 좋다.</p>
+					      <img src="../others/공략관련 이미지/한방퍽.png" alt="한방퍽" class="img">
+					      <p class="text">살인마들의 공용퍽 중 하나인 일명 한방퍽은 발전기가 모두 켜졌을때 굳이 톱으로 썰지 않고 톱으로 접근만 하고 망치로 때려도 한방에 생존자를 지렁이로 만들 수 있어 채용할만 하다.</p>
+					      <img src="../others/공략관련 이미지/띵커러.png" alt="띵커러" class="img">
+					      <p class="text">힐빌리의 퍽인 땜장이퍽은 발전기가 75%이상 수리 될 경우 시각적 알림이 가고 공포범위가 사라지는 퍽인데 바칠과 마찬가지로 힐빌리는 기동성이 좋기 때문에 수리가 완료되기 전에 발전기로가 발전기가 완전히 수리 되는걸 견제할 수 있다.</p>
+					    </div>
+					    <div id="addon-setting">
+					      <hr>
+					      <h4 class="text">추천 애드온 세팅</h4>
+					      <img src="../others/공략관련 이미지/톱구 애드온 1.png" alt="힐빌리 애드온" class="small-img" align="left">
+					      <p class="text">카뷰레터 개조 설명서 + 톰슨제 혼합물<br>
+					      카뷰레터 개조 설명서의 전기톱 시동 시간 감소와 톰슨제 혼합물의 전기톱 재사용 시간을 대폭 줄여주는 능력을 이용해 순식간에 전기톱을 켜고, 빗나가도 순식간에 다시 전기톱을 가동시켜 계속 압박을 줄 수 있는 일명 '시동톱' 조합이다.<br><br>
+					      </p><br>
+					      <img src="../others/공략관련 이미지/톱구 애드온 2.png" alt="힐빌리 애드온" class="small-img" align="left">
+					      <p class="text">파멸의 판화 + 죽음의 판화<br>
+					        쌍판화 톱구라고 불리는 세팅으로 전기톱 질주의 이동속도를 올려주는 판화 애드온을 두개나 채용해 이동속도에 모든걸 거는 세팅이다. 안그래도 빠른 톱구의 이동속도를 더욱 증가시켜 숙련자가 아니면 사용하기 힘들다
+					      </p><br>
+					    </div>
+					    <div id="game-operation">
+					      <hr>
+					      <h4 class="text">게임 운영 방법</h4>
+					      <p class="text">
+					        마우스 오른쪽 버튼을 누르고 있으면 전기톱 가동을 시작하고 하단의 게이지가 점점 차오르며,
+					        게이지가 꽉 차면 전기톱을 쳐들고 빠른 속도로 질주한다. 마우스에서 손을 떼거나 생존자에 부딪히면 자동으로 전기톱을 휘두른다.<br>
+					        지형지물에 부딪치면 경직에 걸려 잠깐 동안 움직일 수 없으며 경직이 풀리면 시야가 바닥으로 내려간다.<br>
+					        전기톱에 썰린 생존자는 체력 상태에 상관없이 무조건 빈사 상태가 된다.<br> 전기톱은 생존자가 넘어뜨린 판자를 부술 수 있지만 이 동안에는 시야가 완전히 바닥으로 내려가 버린다.<br>
+					        하지만 적재적소에 사용하면 판자를 부수는 시간을 더 아낄 수 있을 뿐더러 판자를 직접 부술 동안 손전등에 실명이 될 걱정을 하지 않아도 된다.<br>
+					        또한 판자싸움 심리전에서 우위를 가져갈 수 있고 시동을 거는 척 낚시를 시도하거나 부수는 척 하면서 따라가는 등 응용할 수 있는 경우는 많다.<br>
+					지형지물에 걸리지만 않으면 전기톱으로 무한정 질주할 수 있고 속도도 굉장히 빠르기 때문에 이동기로도 효율이 좋긴 하지만, 돌진하는 중에는 방향을 전환하기 어렵고 시동을 걸 때부터
+					작동음이 온 맵에 크게 울리기 때문에 그만큼 생존자들이 매우 경계한다.<br> 애드온 중 방향 전환을 더 쉽게 해주는 것과 톱의 소음을 줄여주는 애드온이 있긴 하지만 가뜩이나
+					애드온빨을 많이 타는 힐빌리에게 장착해 쓴다는 것은 예능 플레이나 애드온이 턱없이 부족할 때나 하게 되는 일이다.<br>
+					장점만큼 단점도 명확하기에 웬만큼 익숙해지지 않으면 적재적소에 사용하기가 쉽지 않지만, 이것에 익숙해지면 기상천외한 운용이 가능하다.<br>
+					예를 들어 발전기가 터진 곳으로 바로 달려가면 생존자가 미처 숨지도 못할 시간에 도착하여 바로 추격전을 벌일 수가 있다.<br>
+					또 시동을 켤 때마다 모두가 시동음을 듣기 때문에, 시동 켜진다고 무작정 숨을 수도 없는 노릇이라 잘만 노리면 생존자를 유인해서 고라니로 바로 눕혀버릴 수도 있다.<br>
+					워낙 직선적이고 정직한 플레이밖에 할 수 없다 보니 생존자들에게 농락당하기 쉽고, 다른 살인마에 비해 보조 무기로 기만 항목 블러드포인트를 얻기가 상당히 힘들다는 점이 있다.<br>
+					힐빌리의 기본은 생존자를 추격하다가 생존자의 바로 등 뒤까지 거리가 좁혀지면 전기톱 시동을 거는 것이다. 이렇게 되면 생존자 입장에선 언제 힐빌리가 전기톱을 키고 달려올지 모른다는
+					압박감에 잘못된 무빙을 하거나 판자, 창틀과 같은 안전한 장소를 포기하고 방향을 틀 수 있다. 시동을 걸어놓고 돌진하는 척 페인트를 걸어 생존자가 코너링을 하는 그 순간 차징하여
+					갈아버리는 수법 또한 유용하다.<br> 응용법으로는 생존자가 움직이려는 방향으로 돌진해 유리한 지형으로 이동하려고 하는 행동을 압박하고 도주로를 차단하여 불리한 지형으로 강제로 이동시킨
+					 다음 갈아버리는 방법이 있다.<br> 조금 더 숙달된 플레이어들이 사용하는 테크닉으로는 꺾톱이 있는데, 톱이 켜지고 아주 잠깐 동안은 마우스의 감도가 평소와 같다는 점을 이용해 빠른 코너링을
+					  구사한다.<br> '아차'하는 순간에 썰어버리기 때문에 생존자 쪽에서도 대비하기 만만치않다.<br>
+					전기톱 질주의 빠른 이동속도를 바탕으로 맵을 종횡무진하며 정찰한다면 생존자 수색에도 도움이 되고, 생존자 입장에선 여기저기서 들리는 전기톱 소리 때문에 갑자기
+					이쪽으로 올 수 있다는 압박감을 줄 수 있다.<br> 평시 생존자들은 탈출을 위해 발전기를 수리하는 상황이 대부분인데, 높은 기동성 덕분에 한 발전기에서 다른 발전기로 빠른 이동이
+					 가능하기 때문에 생존자에게 스텔스를 할 시간을 주지 않을 수 있다.
+					      </p>
+					    </div>
+					  </div>
+					</article>
+				</section>
+
+				<footer>
+          <section class="community">
+            <div class="socialmedia">
+              <ul class="listes_socialmedia">
+                <li class="twitter_media"><a href="https://twitter.com/deadByBHVR" target="_blank" title="Twitter"></a></li>
+                <li class="facebook_media"><a href="https://www.facebook.com/DeadByDaylight/" target="_blank" title="Facebook"></a></li>
+                <li class="youtube_media"><a href="https://www.youtube.com/channel/UCaSgsFdGbwjfdawl3rOXiwQ" target="_blank" title="YouTube"></a></li>
+                <li class="instragram_media"><a href="https://www.instagram.com/deadbydaylight/" target="_blank" title="Instragram"></a></li>
+                <li class="twitch_media"><a href="https://www.twitch.tv/deadbydaylight" target="_blank" title="Twitch"></a></li>
+                <li class="steam_media"><a href="https://steamcommunity.com/app/381210" target="_blank" title="Steam"></a></li>
+                <li class="reddit_media"><a href="https://www.reddit.com/r/deadbydaylight/" target="_blank" title="Reddit"></a></li>
+                <li class="gamepedia_media"><a href="https://deadbydaylight.gamepedia.com/" target="_blank" title="Gamepedia"></a></li>
+                <li class='socialmedia-content'><a href="https://forum.deadbydaylight.com/en/" target="_blank"></a></li>
+              </ul>
+            </div>
+          </section>
+        </footer>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

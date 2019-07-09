@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>캐릭터 창 세부</title>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../CSS/share.css">
+	<link rel="stylesheet" href="../CSS/tap-menu-design.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://www.blueb.co.kr/SRC2/swipemenu/jquery.touchSwipe.min.js"></script>
+    <script src="../JS/tab-menu.js"></script>
+    <style>
+    	@font-face {
+		  font-family: a타이틀고딕2;
+		  src: url('../others/a타이틀고딕2.ttf') format('truetype');
+		}
+
+		p { font-family: a타이틀고딕2; }
+    	body {
+    		background-image: url('../others/detail_bg/bg-huntress.jpg');
+    		background-size: 100%;
+    		background-position: center top;
+    		background-repeat: no-repeat;
+    	}
+    	article {
+			background-color: white;
+			margin: 3% 20%;
+			opacity: 0.7;
+			padding: 3%;
+			border-radius: 20px;
+		}
+
+		h1 {
+			margin-top: 10%;
+			font-size: 300%;
+			text-align: center;
+			color: white;
+			text-shadow: black 2px 2px 5px;
+		}#perk {
+      width: 100%;
+      height: 100%;
+    }
+.small-img {
+      width: 30%;
+      height: 30%;
+    }
+.img {
+      width: 100%;
+      display: block;
+      margin: 0px auto;
+    }
+    </style>
+</head>
+
+<body>
+	<header class="top_banner">
+		<a id="go_main" href="main.html"></a>
+	</header>
+
+	<div class="containerbar">
+		<div id="sidebar">
+			<ul>
+				<li><a href="notice.html">공지</a></li>
+				<li><a href="update.html">업데이트</a></li>
+				<li><a href="info.html">게임정보</a></li>
+				<li><a href="character.html">공략글</a></li>
+				<li><a href="word.html">용어정리</a></li>
+				<li><a href="service.html">서비스</a></li>
+			</ul>
+		</div>
+
+		<div class="main-content">
+			<div class="swipe-area"></div>
+			<a href="#" data-toggle=".containerbar" id="sidebar-toggle"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+			<div class="content">
+				<section>
+					<h1>The Huntress</h1>
+					<article class="box">
+						<div id="character-info">
+
+					    <div id="character-perk">
+					      <hr>
+					      <h1 class="text">살인마 고유 퍽</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/토구.png" alt="헌트리스 이미지" id="perk">
+					    </div>
+
+					    <div id="character-skill">
+					      <hr>
+					      <h1 class="text">살인마 고유 능력</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/토구 능력.png" alt="헌트리스 능력" class="small-img" align="left">
+					      <ul>
+					        <br>
+					        <li class="text">기본 소지량은 5개. 애드온을 이용해 최대 8개까지 늘릴 수 있다.</li>
+					        <li class="text">마우스 우클릭을 꾹 눌러 준비 동작을 취할 수 있으며, 준비한 시간에 따라 투사체 사거리가 증가한다.(투사체 속도는 일정)        </li>
+					          <ul>
+					            <li class="text">준비 동작을 취하는 동안 이동 속도가 3.14m/s까지 감소한다</li>
+					            <li class="text">최대치까지 도달할 경우 *띵*하는 알람음이 나며, 사거리가 최대치로 증가한다.</li>
+					            <li class="text">마우스 우클릭을 떼어 손도끼를 던질 수 있다.</li>
+					            <li class="text">마우스 왼클릭을 눌러 준비 동작을 취소시킬 수 있다.</li>
+					          </ul>
+
+					        <li class="text">캐비닛에서 손도끼를 재충전할 수 있다</li>
+					      </ul>
+					    </div>
+					    <div id="character-addon">
+					      <br><br><br><br>
+					      <hr>
+					      <h1 class="text">살인마 애드온 목록</h1>
+					      <hr>
+					      <img src="../others/공략관련 이미지/토구 애드온.png" alt="헌트리스 애드온" class="img">
+					    </div>
+					  </div>
+					  <div id="main-article">
+					    <hr>
+					    <h1>플레이시 팁</h1>
+					    <hr>
+					    <div id="pac">
+					      <h3 class="text"> 토구의 장단점</h3>
+					      <h4 class="text"> 토구의 장점</h4>
+					      <ul>
+					        <li class="text">
+					          <h4 class=text>원거리 공격</h4>
+					          오직 근거리 공격만을 사용하는 다른 살인마들과는 달리, 원거리에서도 생존자를 공격할 수 있는 큰 메리트를 가지고 있다. 이 때문에 판자와 창틀에 강하다.
+					        </li>
+					        <br>
+					        <li class="text">
+					          <h4 class=text>좁은 공포 범위</h4>
+					          매우 넓은 범위의 노랫 소리를 가진 대신, 심박음이 들리는 공포 범위가 좁은 편이다. 그래서 생존자가 살인마와의 정확한 거리재기를 어렵게 하는 소소한 이점이 있다. 이는 감시와 학대를 채용했을 때 진가를 발휘한다.
+					        </li>
+					        <br>
+					      </ul>
+					      <h4 class="text"> 토구의 단점</h4>
+					      <ul>
+					        <li class="text">
+					          <h4 class=text>느린 이동 속도</h4>
+					          해그, 스피릿과 동일한 이동 속도를 가지고 있다. 그래도 가까이 근접할 필요 없이 원거리에서 손도끼로 공격이 가능하기 때문에 생존자 추격시 치명적인 단점은 아니다.
+					           그러나 돌담 같이 도끼각이 잘 나오지 않는 인성존에선 어쩔 수 없이 느린 이동 속도로 생존자를 추격할 수 밖에 없다. 이동 속도가 느리다보니 발전기 방어에도 상당히 애를 먹는다.
+					        </li>
+					        <br>
+					        <li class="text">
+					          <h4 class=text>높은 난이도의 조준</h4>
+					투척된 손도끼가 포물선의 형태를 띄며 날라가기 때문에 이를 계산하며 던져야하는 것은 물론이요,
+					 크로스헤어가 따로 없기 때문에 에임을 감에 의존해야하는 것도 문제다. 이는 파일럿의 실력에 의존하기 때문에 숙련된 플레이어라면 그리 문제가 되지 않는다.
+					        </li>
+					        <li class="text">
+					          <h4 class=text>느린 재충전 속도</h4>
+					소지 중인 손도끼를 다 쓰게되면 캐비닛에서 재충전을 해야하는데, 여기에 허비되는 시간이 상당히 길다.
+					 그렇다고 충전을 안하면 아무런 특수 능력 없이 느린 이동 속도로 생존자를 쫓아야하기 때문에 재충전이 강요된다. 이는 에임이나 애드온 또는 퍽을 통해 보완할 수 있다.
+					        </li>
+					        <li class="text">
+					          <h4 class=text>매우 넓은 콧소리 범위</h4>
+					45m라는 매우 넓은 노랫소리 범위를 가지고 있어 생존자가 재빨리 경계하기 쉬워진다.
+					가 노랫소리는 공포 범위와 별개라서 어떤 기술을 채용해도 범위가 줄어들거나 늘어나지 않은것과 더불어 심장소리와는 다르게 소리를 듣고 생존자들이 살인마의 위치를 유추할수 있다.
+					        </li>
+					        <li class="text">
+					          <h4 class=text>부족한 색적 능력</h4>
+					헌트리스는 기본 이동속도가 느린데다 넓은 콧소리 범위 때문에 생존자들이 근처에 살인마가 있다는 것을 눈치채고 금방 숨어버리기 때문에 작정하고 스텔스를 하는 생존자를 색적하는 것이 쉽지 않다.
+					 생존자를 추격할 경우, 손도끼 투척 준비 동작시 안 그래도 느린 이동 속도가 더 느려지기 때문에 도끼각을 제대로 맞추지 못하면 생존자를 시야에서 놓치기 쉽다.
+					        </li>
+					      </ul>
+					    </div>
+					    <div id="perk-setting">
+					      <hr>
+					      <h4 class="text">추천 퍽 세팅</h4>
+					      <img src="../others/공략관련 이미지/토구 추천 퍽.png" alt="헌트리스 퍽" class="img">
+					      <p class="text">
+					        왼쪽부터 루인은 대부분의 모든 살인마에게 추천되며 발전기 스킬체크 대성공당 1.6초 스킬체크 그냥 성공당 7초 이상의 시간을 늦출 수 있다.<br>
+					        브루탈은 판자를 부수는 시간을 빠르게 해줘 추격시 판자를 더 빠르게 뺼 수 있는 능력을 준다.<br>
+					        고문은 캐비닛을 여는 속도가 50%까지 줄어드는데 이는 도끼를 충전하는데 걸리는 시간에도 영향을 주며 바칠을 피하기위해 캐비닛에 들어간 생존자들을 카운터 칠 수 있다.<br>
+					      바베큐엔 칠리는 헌트리스 같은 경우에는 멀리서 도끼를 던져 저격을 노려 볼 수 있으며 부족한 색적능력을 채워 줄 수 있다.</p>
+					    </div>
+					    <div id="addon-setting">
+					      <hr>
+					      <h4 class="text">추천 애드온 세팅</h4>
+					      <img src="../others/공략관련 이미지/토구 애드온 1.png" alt="헌트리스 애드온" class="small-img" align="left">
+					      <p class="text">핏빛 도끼날 + 보병의 허리띠<br>
+					        흔히 말하는 한방토구인데 빨드온 효과(도끼투척시 한방에 빈사상태, 도끼소지량-4)를
+					    보라벨트 효과(도끼소지량+2)로 매꿔서 한방에 눕히는 도끼를 3발까지 던지는 세팅이다.<br>
+					    헌트리스 최강의 셋팅으로 꼽힌다.<br><br><br>
+					      </p><br>
+					      <img src="../others/공략관련 이미지/토구 애드온 2.png" alt="헌트리스 애드온" class="small-img" align="left">
+					      <p class="text">보병의 허리띠 + 참나무 손잡이<br>
+					  보병의 허리띠(도끼소지량+2)를 가지고 참나무 손잡이(도끼를 연속으로 던질때 선딜레이 -20%)를 이용해
+					  신속하게 생존자를 눕힐 수 있어 도끼로 근처에 있는 생존자를 맞추고 이어서 바로 던져서 맞추는 플레이를 가능하게 하는 세팅으로 보병의 허리띠가 부족하다면 가죽고리(도끼소지량+1)로 대체가 가능하다.
+					      </p><br><br>
+					      <img src="../others/공략관련 이미지/토구 애드온 3.png" alt="헌트리스 애드온" class="small-img" align="left">
+					      <p class="text">꽃무늬 손수건 + 만나풀노리개<br>
+					  와인드업 세팅이라고 불리며 도끼를 더 빠르게 던질 수 있게해주는 세팅이다. 취향에 따라서 만나풀노리개 보다는 참나무 손잡이를 사용하는 사람도 있다.
+					      </p><br><br>
+					    </div>
+					    <div id="game-operation">
+					      <hr>
+					      <h4 class="text">게임 운영 방법</h4>
+					      <p class="text">
+					        토구는 이동속도가 타 살인마에 비해 느리기 때문에 발전기만 지키키에도 빠듯할 뿐더러 생존자가 발전기가 없는 쪽으로 가는 당신을 본다면 뒤따라가서 바로 루인이 사라질 수도 있으므로
+					        게임이 시작되면 일단 루인 보다는 생존자가 있을 것 같은 곳을 먼저 가는 것이 좋다.
+					최대한 빠르게 색적하고 최대한 빨리 한명을 눕혀서 갈고리에 걸고
+					여타 다른 뚜벅이들처럼 터널링을 해서 최대한 빠르게 1명을 죽이는 것이 중요하다. 한명을 죽였다면 발전기가 2~3개쯤 남을텐데
+					생존자를 색적하고 잡으면 최대한 근처에 발전기가 있는 갈고리에 거는 것이 좋다. 토구는 원거리에서 공격이 가능하기에 발전기와 갈고리를 동시에 견제 할 수 있기때문이다.<br>
+					생존자를 추격하며 가장 주의할 점은 터널링이 실패하거나 색적이 늦어지면 토구는 정말 큰 손해를 본다는 것이다.
+					토구는 이동속도가 느리기 때문에 발전기 사이를 순찰하는데 다른 살인마보다 시간이 더 많이 필요하다. 별것 아닌것 처럼 보이지만 이 시간들이 쌓이면 결코 무시할 수 없는 시간이 되므로
+					생존자를 찾았다면 무조건 터널링을 해서 잡아내야만 한다.
+					      </p>
+					    </div>
+					  </div>
+					</article>
+				</section>
+
+				<footer>
+          <section class="community">
+            <div class="socialmedia">
+              <ul class="listes_socialmedia">
+                <li class="twitter_media"><a href="https://twitter.com/deadByBHVR" target="_blank" title="Twitter"></a></li>
+                <li class="facebook_media"><a href="https://www.facebook.com/DeadByDaylight/" target="_blank" title="Facebook"></a></li>
+                <li class="youtube_media"><a href="https://www.youtube.com/channel/UCaSgsFdGbwjfdawl3rOXiwQ" target="_blank" title="YouTube"></a></li>
+                <li class="instragram_media"><a href="https://www.instagram.com/deadbydaylight/" target="_blank" title="Instragram"></a></li>
+                <li class="twitch_media"><a href="https://www.twitch.tv/deadbydaylight" target="_blank" title="Twitch"></a></li>
+                <li class="steam_media"><a href="https://steamcommunity.com/app/381210" target="_blank" title="Steam"></a></li>
+                <li class="reddit_media"><a href="https://www.reddit.com/r/deadbydaylight/" target="_blank" title="Reddit"></a></li>
+                <li class="gamepedia_media"><a href="https://deadbydaylight.gamepedia.com/" target="_blank" title="Gamepedia"></a></li>
+                <li class='socialmedia-content'><a href="https://forum.deadbydaylight.com/en/" target="_blank"></a></li>
+              </ul>
+            </div>
+          </section>
+        </footer>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

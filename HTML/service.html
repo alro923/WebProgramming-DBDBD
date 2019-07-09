@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SERVICE</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../CSS/share.css">
+  <link rel="stylesheet" href="../CSS/service_design.css">
+  <link rel="stylesheet" href="../CSS/tap-menu-design.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://www.blueb.co.kr/SRC2/swipemenu/jquery.touchSwipe.min.js"></script>
+  <script src="../JS/tab-menu.js"></script>
+  <script src="../JS/game.js"></script>
+  <style>
+    article {
+      background-color: white;
+      margin: 3% 10%;
+      opacity: 0.9;
+      padding: 3%;
+      border-radius: 20px;
+    }
+
+    footer {
+      margin-top: 10%;
+      width: 100%;
+    }
+
+    input {
+      width: 250px;
+      height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="top_banner">
+    <a id="go_main" href="main.html"></a>
+  </header>
+  <div class="containerbar">
+    <div id="sidebar">
+      <ul>
+        <li><a href="notice.html">공지</a></li>
+        <li><a href="update.html">업데이트</a></li>
+        <li><a href="info.html">게임정보</a></li>
+        <li><a href="character.html">공략글</a></li>
+        <li><a href="word.html">용어정리</a></li>
+        <li><a href="service.html">서비스</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <div class="swipe-area"></div>
+      <a href="#" data-toggle=".containerbar" id="sidebar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="content">
+        <h1>서비스 사운드 퀴즈</h1>
+        <div class="main_body">
+
+          <article>
+
+            <h3>다음 소리를 듣고 상황과 맞지 않은 것을 고르시오.</h3>
+            <form>
+              <audio src="../others/서비스 관련 파일/사운드 퀴즈 1.mp3" controls="controls"></audio><br>
+              <input type="button" value="엔드게임이 발동하였다." class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="생존자가 즉결처형을 당하였다." class="correct1" onclick='correct(this)'>
+              <input type="button" value="살인마는 닥터이다." class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="살인마는 생존자를 추격하고 있었다." class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="답 없음" class="wrong1" onclick='wrong(this)'>
+            </form>
+            <br>
+            <h3>다음 소리를 듣고 어떤 살인마인지 고르시오.</h3>
+            <form>
+              <audio src="../others/서비스 관련 파일/사운드 퀴즈 2.mp3" controls="controls"></audio><br>
+              <input type="button" value="스피릿" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="헌트리스" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="너스" class="correct1" onclick='correct(this)'>
+              <input type="button" value="해그" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="답 없음" class="wrong1" onclick='wrong(this)'>
+            </form>
+            <br>
+            <h3>다음 소리는 생존자가 부상당했을시 내는 신음 소리이다. 부상당한 생존자를 고르시오.</h3>
+            <form>
+              <audio src="../others/서비스 관련 파일/사운드 퀴즈 3.mp3" controls="controls"></audio><br>
+              <input type="button" value="로리 스트로드" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="케이트 덴슨" class="correct1" onclick='correct(this)'>
+              <input type="button" value="클로뎃 모렐" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="메그 토마스" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="답 없음" class="wrong1" onclick='wrong(this)'>
+            </form>
+            <br>
+            <h3>다음은 헌트리스가 내는 소리로 어떠한 상황에서 나는 소린지 고르시오.</h3>
+            <form>
+              <audio src="../others/서비스 관련 파일/사운드 퀴즈 4.mp3" controls="controls"></audio><br>
+              <input type="button" value="도끼를 다시 충전했을때." class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="도끼가 모두 떨어졌을때." class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="헌트리스가 기절했을때." class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="발전기나 판자를 부술떄." class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="답 없음" class="correct1" onclick='correct(this)'>
+            </form>
+            <br>
+            <h3>다음 소리를 듣고 올바르지 않은 것을 고르시오</h3>
+            <form>
+              <audio src="../others/서비스 관련 파일/사운드 퀴즈 5.mp3" controls="controls"></audio><br>
+              <input type="button" value="비상 탈출구가 닫혔다." class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="엔드게임이 시작됬다." class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="출구를 열 수 있다." class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="생존자는 5분안에 탈출하여야 한다." class="correct1" onclick='correct(this)'>
+              <input type="button" value="답 없음" class="wrong1" onclick='wrong(this)'>
+            </form>
+            <br>
+            <h3>다음 소리는 살인마의 즉결처형 소리이다. 어떤 살인마의 것인지 고르시오.</h3>
+            <form>
+              <audio src="../others/서비스 관련 파일/사운드 퀴즈 6.mp3" controls="controls"></audio><br>
+              <input type="button" value="역병" class="correct1" onclick='correct(this)'>
+              <input type="button" value="해그" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="헌트리스" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="너스" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="답 없음" class="wrong1" onclick='wrong(this)'>
+            </form>
+            <br>
+            <h3>다음 소리는 살인마가 어떤 행동을 할때 나는 소리이다. 어떤 행동인지 고르시오.</h3>
+            <form>
+              <audio src="../others/서비스 관련 파일/사운드 퀴즈 7.mp3" controls="controls"></audio><br>
+              <input type="button" value="창틀을 넘는다" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="비상 탈출구를 닫는다." class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="캐비넷을 확인한다." class="correct1" onclick='correct(this)'>
+              <input type="button" value="생존자를 갈고리에 건다." class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="답 없음" class="wrong1" onclick='wrong(this)'>
+            </form>
+            <br>
+            <h3>다음 소리는 살인마가 능력을 사용 했을때 나는 소리이다. 어떤 살인마인지 고르시오.</h3>
+            <form>
+              <audio src="../others/서비스 관련 파일/사운드 퀴즈 8.mp3" controls="controls"></audio><br>
+              <input type="button" value="힐빌리" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="카니발" class="correct1" onclick='correct(this)'>
+              <input type="button" value="나이트메어" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="쉐이프" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="답 없음" class="wrong1" onclick='wrong(this)'>
+            </form>
+            <br>
+            <h3>다음 소리는 특정 맵에서만 발생하는 효과음이다. 어떠한 맵인지 고르시오.</h3>
+            <form>
+              <audio src="../others/서비스 관련 파일/사운드 퀴즈 9.mp3" controls="controls"></audio><br>
+              <input type="button" value="오르몬드 산 리조트" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="폐차장" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="비명을 지르는 창고" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="페일 로즈 호" class="correct1" onclick='correct(this)'>
+              <input type="button" value="답 없음" class="wrong1" onclick='wrong(this)'>
+            </form>
+            <br>
+            <h3>다음 소리가 어떠한 행동을 할 때 발생하는 소리인지 고르시오.</h3>
+            <form>
+              <audio src="../others/서비스 관련 파일/사운드 퀴즈 10.mp3" controls="controls"></audio><br>
+              <input type="button" value="상자 탐색" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="출구 개방" class="correct1" onclick='correct(this)'>
+              <input type="button" value="발전기 수리" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="갈고리 파괴" class="wrong1" onclick='wrong(this)'>
+              <input type="button" value="답 없음" class="wrong1" onclick='wrong(this)'>
+            </form>
+          </article>
+        </div>
+      </div>
+      <footer>
+        <section class="community">
+          <div class="socialmedia">
+            <ul class="listes_socialmedia">
+              <li class="twitter_media"><a href="https://twitter.com/deadByBHVR" target="_blank" title="Twitter"></a>
+              </li>
+              <li class="facebook_media"><a href="https://www.facebook.com/DeadByDaylight/" target="_blank"
+                  title="Facebook"></a></li>
+              <li class="youtube_media"><a href="https://www.youtube.com/channel/UCaSgsFdGbwjfdawl3rOXiwQ"
+                  target="_blank" title="YouTube"></a></li>
+              <li class="instragram_media"><a href="https://www.instagram.com/deadbydaylight/" target="_blank"
+                  title="Instragram"></a></li>
+              <li class="twitch_media"><a href="https://www.twitch.tv/deadbydaylight" target="_blank"
+                  title="Twitch"></a></li>
+              <li class="steam_media"><a href="https://steamcommunity.com/app/381210" target="_blank" title="Steam"></a>
+              </li>
+              <li class="reddit_media"><a href="https://www.reddit.com/r/deadbydaylight/" target="_blank"
+                  title="Reddit"></a></li>
+              <li class="gamepedia_media"><a href="https://deadbydaylight.gamepedia.com/" target="_blank"
+                  title="Gamepedia"></a></li>
+              <li class='socialmedia-content'><a href="https://forum.deadbydaylight.com/en/" target="_blank"></a></li>
+            </ul>
+          </div>
+        </section>
+      </footer>
+
+
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
